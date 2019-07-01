@@ -1,0 +1,67 @@
+<!--pages/index/more/emission/emissionGs/emissionGs.wxml-->
+<view class='pages'>
+  <view class='page-boxs'>
+    <image src='../../../../../assets/images/22.NOX.png'></image>
+  </view>
+  <view class='adviceTxt'>
+    <view class='adviceauto'>
+      <view class='page_title'>
+        <text>燃料N向燃料NO的转变率β</text>
+      </view>
+      <view class="table">
+        <view class="tr">
+          <view class="th">锅炉类型</view>
+          <view class="th">燃料N向燃料型NO的转变率β/% </view>
+        </view>
+        <block>
+          <view class="trs">
+            <view class="td">燃谋层燃炉</view>
+            <view class="td">4~8</view>
+          </view>
+          <view class="trs">
+            <view class="td">燃油锅炉</view>
+            <view class="td">32~40</view>
+          </view>
+          <view class="trs">
+            <view class="td">煤粉炉</view>
+            <view class="td">20~25</view>
+          </view>
+        </block>
+      </view>
+    </view>
+        <view class='adviceauto'>
+      <view class='page_title'>
+        <text>燃料中氮的含量n参考值(百分比n/%)</text>
+      </view>
+      <view class="table">
+        <view class="tr">
+          <view class="ths">燃料名称</view>
+          <view class='ths'>数值</view>
+          <view class="ths">平均值</view>
+        </view>
+        <block>
+          <view class="trs">
+            <view class="tds">煤</view>
+            <view class="tds">0.5-2.5</view>
+            <view class="tds">1.5</view>
+          </view>
+          <view class="trs">
+            <view class="tds">劣质量油</view>
+            <view class="tds">0.2-0.4</view>
+            <view class="tds">0.20</view>
+          </view>
+          <view class="trs">
+            <view class="tds">一般重油</view>
+            <view class="tds">0.08-0.4</view>
+            <view class="tds">0.14</view>
+          </view>
+          <view class="trs">
+            <view class="tds">优质重油</view>
+            <view class="tds">0.005-0.08</view>
+            <view class="tds">0.02</view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

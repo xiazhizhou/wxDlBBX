@@ -1,0 +1,17 @@
+/* pages/index/more/consump/consump.wxss */
+page{
+  background-color: white;
+}
+
+.page .flex-item {
+  justify-content:space-around;
+}
+
+.page .flex-item .flexInputbox .text {
+  width:116rpx;
+}
+
+
+.page .flex-item text{
+  width: 290rpx;
+}

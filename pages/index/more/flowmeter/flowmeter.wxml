@@ -1,0 +1,69 @@
+<!--pages/index/more/flowmeter/flowmeter.wxml-->
+<view class='page'>
+  <view class="section">
+    <view class="section__title">输入：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <text>流量上限Max：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='lsValue' value='{{lsValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>m³/h</view>
+        </view>
+      </view>
+      <view class="flex-item bc_green">
+        <text>流量下限Min：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='lxValue' value='{{lxValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>m³/h</view>
+        </view>
+      </view>
+      <view class="flex-item bc_green">
+        <text>电流值I：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='dlValue' value='{{dlValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>mA</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section__title">输出：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <text>输出流量值X：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' value='{{list[0]}}' type='digit' disabled='disabled' />
+          <view class='text'>m³/h</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section section-mt">
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <button class='flex-btn' catchtap='compute'>
+          一键计算
+        </button>
+      </view>
+      <view class="flex-item bc_green">
+        <button class='flex-btn' catchtap='clear'>
+          一键清除
+        </button>
+      </view>
+    </view>
+  </view>
+  <view class='img'>
+    <view class="section__title">计算公式：</view>
+    <view class='img-box'>
+      <image src='../../../../assets/images/34.llj.png'></image>
+    </view>
+    <view class="section__title">
+      <text>电流测量值范围：4~20mA;</text>
+    </view>
+  </view>
+</view>
+
+
+
+
+

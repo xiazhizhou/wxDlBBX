@@ -1,0 +1,5 @@
+/* pages/index/more/steammeter/dimension/dimension.wxss */
+page{
+  background-color: white;
+}
+

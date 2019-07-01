@@ -1,0 +1,68 @@
+<!--pages/index/more/datumconver/atmosphere/atmosphere.wxml-->
+<view class='page'>
+  <view class="section">
+    <view class="section__title">输入：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <text>收到基水分Mar：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='atmosphereValue' value='{{atmosphereValue}}' type="digit" bindinput="bindKeyInput" placeholder-style="color:#c4c5c7" placeholder="输入数值" />
+          <view class='text'>%</view>
+        </view>
+      </view>
+      <view class="flex-item bc_green">
+        <text>空气干燥基水分Mad：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='kqValue' value='{{kqValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>%</view>
+        </view>
+      </view>
+      <view class="flex-item bc_green">
+        <text>空气干燥基某成分Xad：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='kqgzValue' value='{{kqgzValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>%</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section__title">输出：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <text>收到基某成分Xar：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' value='{{list[0]}}' type='digit' disabled='disabled' />
+          <view class='text'>%</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section section-mt">
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <button class='flex-btn' catchtap='compute'>
+          一键计算
+        </button>
+      </view>
+      <view class="flex-item bc_green">
+        <button class='flex-btn' catchtap='clear'>
+          一键清除
+        </button>
+      </view>
+    </view>
+  </view>
+  <view class='img imgBox'>
+    <view class="section__title">计算公式：</view>
+    <view class='img-box'>
+      <image src='../../../../../assets/images/15.sdjykqgzj.png'></image>
+    </view>
+    <view class="section__title cktitle">
+      <text class='cktitleBg' catchtap='advice'>参考说明</text>
+    </view>
+  </view>
+</view>
+
+
+
+

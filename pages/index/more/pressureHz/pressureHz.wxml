@@ -1,0 +1,67 @@
+<!--pages/index/more/steammeter/pressureHz/pressureHz.wxml-->
+<view class='page'>
+  <view class="section">
+    <view class="section__title">输入：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <text>压力P：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='pressureValue' value='{{pressureValue}}' type="digit" bindinput="bindKeyInput" placeholder-style="color:#c4c5c7" placeholder="输入数值" />
+          <view class='text'>MPa</view>
+        </view>
+      </view>
+      <view class="flex-item bc_red">
+        <text>焓值H：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='pressureHz' value='{{pressureHz}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>KJ/Kg</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section__title">输出：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <text>温度T：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' value='{{list[0]}}' type='digit' disabled='disabled' />
+          <view class='text'>℃</view>
+        </view>
+        
+      </view>
+      <view class="flex-item bc_blue">
+        <text>熵值S：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' value='{{list[1]}}' type='digit' disabled='disabled' />
+          <view class='text'>KJ/K</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section section-mt">
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <button class='flex-btn' catchtap='compute'>
+          一键计算
+        </button>
+      </view>
+      <view class="flex-item bc_green">
+        <button class='flex-btn' catchtap='clear'>
+          一键清除
+        </button>
+      </view>
+    </view>
+  </view>
+  <view class='img'>
+    <view class="section__title">计算公式：</view>
+    <view class='img-box'>
+      <image src='../../../../assets/images/4.yzyalhz.png'></image>
+    </view>
+    <view class="section__title img-text">
+      <text>压力P取值范围：0~30MPa;</text>
+      <text>焓值H取值范围：0~4010KJ/Kg;</text>
+    </view>
+  </view>
+</view>
+

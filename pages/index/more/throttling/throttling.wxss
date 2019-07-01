@@ -1,0 +1,7 @@
+/* pages/index/more/throttling/throttling.wxss */
+page{
+  background-color: white;
+}
+.page .flex-item text {
+  width:324rpx;
+}

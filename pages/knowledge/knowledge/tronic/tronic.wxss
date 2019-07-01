@@ -1,0 +1,4 @@
+/* pages/knowledge/knowledge/tronic/tronic.wxss */
+page{
+  background-color:white; 
+}

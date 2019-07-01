@@ -1,0 +1,12 @@
+<!--pages/knowledge/knowledge/tronic/electronTf/electronTf.wxml-->
+<reload id='reload' buttonText='重 试' message='请求失败' isShow="{{is_loadmore}}" bind:reload="_reload">
+</reload>
+<view class="section" wx:if="{{!is_loadmore}}">
+  <view class="grids">
+    <!-- <image wx:for="{{list}}" src='{{item.IMG}}'></image> -->
+    <image class="item" wx:for="{{list}}" src="{{item.IMG}}" mode="aspectFill" bindtap="previewHandle" data-src="{{item}}"/>
+  </view>
+</view>
+
+  
+

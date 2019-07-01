@@ -1,0 +1,41 @@
+<!--pages/profile/about/about.wxml-->
+<view class="pages">
+  <view class='viewBox'>
+    <view class='viewImg'>
+      <image src='../../../assets/images/dlxzs.jpg'></image>
+      <text>电力百宝箱v1.0.8</text>
+    </view>
+  </view>
+  <view class='viewBox'>
+    <view class='viewauto'>
+      <view class='viewList'>
+        <text class='viewleft'>公司网站:</text>
+        <text class='viewright'>http://www.bsh-tech.com</text>
+      </view>
+      <view class='viewList'>
+        <text class='viewleft'>联系电话:</text>
+        <text class='viewright'>027-87611322</text>
+      </view>
+    </view>
+  </view>
+  <view class='viewBox'>
+    <view class='viewauto'>
+      <view class='viewtitle'>
+        应用介绍:
+      </view>
+      <view class='viewtxt'>
+        电力百宝箱小程序是一款功能丰富、用途广泛的全能实用型软件，随时可以进行题库考试练习，电厂指标参数计算，电力专业技术知识学习以及相关新闻浏览，电力人员使用极为方便。
+      </view>
+    </view>
+  </view>
+  <view class='viewBox'>
+    <view class='viewauto'>
+      <view class='viewtitle'>
+        公司简介:
+      </view>
+      <view class='viewtxt'>
+        武汉博晟信息科技有限公司，智慧能源企业卓越服务商，成立于2001年，是赛摩电气股份有限公司（股票代码：300466）的全资子公司。公司致力于智慧能源企业的建设、转型和升级，为客户提供智慧电厂、互联网+安全生产、燃料智能化、经营管控与价值寻优全套解决方案及相关产品。
+      </view>
+    </view>
+  </view>
+</view>

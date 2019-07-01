@@ -1,0 +1,85 @@
+<!--pages/index/more/calculatorhs/calculatorhs.wxml-->
+<view class="content-desc">
+    <view class="content-count">
+      <input bindinput="bindKeyInput" data-id="1" value='{{degree}}' type="number" style="width: 25%" placeholder="请输入数值" placeholder-style="font-size:28rpx;"/>
+      <text class="pad">kWh=</text>
+      <input type="number" disabled="disabled" data-id="1" catchtap='result' value='{{degreeValue}}' style="width: 25%" />
+      <text class="setwidth">kJ</text>
+    </view>
+    <view class="content-count">
+      <input bindinput="bindKeyInput" data-id="2" value='{{kcal}}' type="number" style="width: 25%" placeholder="请输入数值" placeholder-style="font-size:28rpx;"/>
+      <text class="pad">kcal=</text>
+      <input type="number" disabled="disabled" data-id="2" catchtap='result' value='{{kcalValue}}' style="width: 25%" />
+      <text class="setwidth">J</text>
+    </view>
+    <view class="content-count">
+      <input bindinput="bindKeyInput" data-id="3" value='{{bbmt}}' type="number" style="width: 25%" placeholder="请输入数值" placeholder-style="font-size:28rpx;"/>
+      <text class="pad">kcal/h=</text>
+      <input type="number" disabled="disabled" data-id="3" catchtap='result' value='{{bbmtValue}}' style="width: 25%" />
+      <text class="setwidth">w</text>
+    </view>
+    <view class="content-count">
+      <input bindinput="bindKeyInput" data-id="4" value='{{kcal1}}' type="number" style="width: 25%" placeholder="请输入数值" placeholder-style="font-size:28rpx;"/>
+      <text class="pad">BTU=</text>
+      <input type="number" disabled="disabled" data-id="4" catchtap='result' value='{{kcalValue1}}' style="width: 25%" />
+      <text class="setwidth">J</text>
+    </view>
+    <view class="content-count">
+      <input bindinput="bindKeyInput" data-id="5" value='{{celsius}}' type="number" style="width: 25%" placeholder="请输入数值" placeholder-style="font-size:28rpx;"/>
+      <text class="pad">℃=</text>
+      <input type="number" disabled="disabled" data-id="5" catchtap='result' value='{{celsiusValue}}' style="width: 25%" />
+      <text class="setwidth">K</text>
+    </view>
+    <view class="content-count">
+      <input bindinput="bindKeyInput" data-id="6"  value='{{kpa}}' type="number" style="width: 25%" placeholder="请输入数值" placeholder-style="font-size:28rpx;"/>
+      <text class="pad">psi=</text>
+      <input type="number" disabled="disabled" data-id="6" catchtap='result' value='{{hoValue}}' style="width: 25%" />
+      <text class="setwidth">kpa</text>
+    </view>
+    <view class="content-count">
+      <input bindinput="bindKeyInput" data-id="7" value='{{kpa1}}' type="number" style="width: 25%" placeholder="请输入数值" placeholder-style="font-size:28rpx;" />
+      <text class="pad">kPa=</text>
+      <input type="number" disabled="disabled" data-id="7" catchtap='result' value='{{hgValue}}' style="width: 25%" />
+      <text class="setwidth">mmHg</text>
+    </view>
+    <view class="content-count">
+      <input bindinput="bindKeyInput" data-id="8" value='{{mbar}}' type="number" style="width: 25%" placeholder="请输入数值" placeholder-style="font-size:28rpx;" />
+      <text class="pad">mbar=</text>
+      <input type="number" disabled="disabled" data-id="8" catchtap='result' value='{{mbarValue}}' style="width: 25%" />
+      <text class="setwidth">kgf/m²</text>
+    </view>
+    <view class="content-count">
+      <input bindinput="bindKeyInput" data-id="9"  value='{{lb}}' type="number" style="width: 25%" placeholder="请输入数值" placeholder-style="font-size:28rpx;" />
+      <text class="pad">lb=</text>
+      <input type="number" disabled="disabled" data-id="9" catchtap='result' value='{{lbValue}}' style="width: 25%" />
+      <text class="setwidth">kg</text>
+    </view>
+    <view class="content-count">
+      <input bindinput="bindKeyInput" data-id="10" value='{{inch}}' type="number" style="width: 25%" placeholder="请输入数值" placeholder-style="font-size:28rpx;"/>
+      <text class="pad">inch=</text>
+      <input type="number" disabled="disabled" data-id="10" catchtap='result' value='{{inchValue}}' style="width: 25%" />
+      <text class="setwidth">mm</text>
+    </view>
+    <view class="content-count">
+      <input bindinput="bindKeyInput" data-id="11" value='{{so}}' type="number" style="width: 25%" placeholder="请输入数值" placeholder-style="font-size:28rpx;" />
+      <text class="pad">ppm=</text>
+      <input type="number" disabled="disabled" data-id="11" catchtap='result' value='{{soValue}}' style="width: 25%" />
+      <text>mg/Nm³</text>
+      <view>SO₂</view>
+    </view>
+    <view class="content-count">
+      <input bindinput="bindKeyInput" data-id="12" value='{{no}}' type="number" style="width:25%" placeholder="请输入数值"  placeholder-style="font-size:28rpx;" />
+      <text class="pad">ppm=</text>
+      <input type="number" disabled="disabled" data-id="12" catchtap='result' value='{{noValue}}' style="width: 25%" />
+      <text>mg/Nm³</text>
+      <view>NO</view>
+    </view>
+    <view class="content-count">
+      <input bindinput="bindKeyInput" data-id='13' value='{{nox}}' type="number" style="width: 25%" placeholder="请输入数值" placeholder-style="font-size:28rpx;" />
+      <text class="pad">ppm=</text>
+      <input type="number" disabled="disabled" data-id='13' catchtap='result' value='{{noxValue}}' style="width: 25%;" />
+      <text>mg/Nm³</text>
+      <view>NOx</view>
+    </view>
+    <text style="margin-top: 1rem;">注：输入数值后请点击对应的右框</text>
+  </view>

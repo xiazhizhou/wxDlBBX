@@ -1,0 +1,31 @@
+/* pages/index/more/calculatorhs/calculatorhs.wxss */
+page{
+  background-color: white;
+}
+.content-desc {
+  padding: 0 20rpx;
+  background-color: #fff;
+  margin-top: 40rpx;
+}
+.content-desc .content-count {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 10rpx 10rpx;
+}
+.content-desc .content-count .pad {
+  width: 130rpx;
+  text-align: right;
+}
+
+.content-desc .content-count .setwidth {
+  width: 5rem;
+  text-align: center;
+}
+input[type='number'] {
+  text-align: right;
+  -moz-appearance: textfield;
+  border: 2rpx solid #ccc;
+  background: linear-gradient(0deg, white, white 80%,#ccc);
+  border-radius: 10rpx;
+}

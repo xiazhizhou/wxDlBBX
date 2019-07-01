@@ -1,0 +1,22 @@
+/* pages/index/more/rateout/rateout.wxss */
+page{
+  background-color: white;
+}
+.page .flex-item2{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin:30rpx 20rpx;
+}
+.page .flex-item2 text{
+  width: 280rpx;
+}
+.page .flex-item2 .flexInputbox2{
+  display: flex;
+  border: 2rpx solid #656565;
+  border-radius: 20rpx;
+  padding: 5rpx 0;
+}
+.page .flex-item2 .flex-input{
+  padding-left: 10rpx;
+}

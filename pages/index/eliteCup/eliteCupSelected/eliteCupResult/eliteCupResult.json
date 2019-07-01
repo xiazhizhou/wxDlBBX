@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "精英杯比赛",
+    "usingComponents": {
+      "alert": "/components/alert/alert"
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarBackgroundColor": "#0c3e71",
+  "usingComponents": {
+    "reload": "/components/reload/reload"
+  }
+}

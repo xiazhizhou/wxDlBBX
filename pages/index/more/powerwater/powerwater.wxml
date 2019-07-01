@@ -1,0 +1,60 @@
+<!--pages/index/more/powerwater/powerwater.wxml-->
+<view class='page'>
+  <view class="section">
+    <view class="section__title">输入：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <text>取水量Q：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='qslValue' value='{{qslValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>kg</view>
+        </view>
+        
+      </view>
+      <view class="flex-item bc_green">
+        <text>发电量E：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='fdlValue' value='{{fdlValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>kWh</view>
+        </view>
+        
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section__title">输出：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <text>发电水耗W：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' value='{{list[0]}}' type='digit' disabled='disabled' />
+          <view class='text'>kg/kWh</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section section-mt">
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <button class='flex-btn' catchtap='compute'>
+          一键计算
+        </button>
+      </view>
+      <view class="flex-item bc_green">
+        <button class='flex-btn' catchtap='clear'>
+          一键清除
+        </button>
+      </view>
+    </view>
+  </view>
+  <view class='img'>
+    <view class="section__title">计算公式：</view>
+    <view class='img-box'>
+      <image src='../../../../assets/images/14.fdsh.png'></image>
+    </view>
+  </view>
+</view>
+
+
+
+

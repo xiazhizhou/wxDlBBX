@@ -1,0 +1,31 @@
+<!--pages/index/more/serous/serousGS/serousGS.wxml-->
+<view class='pages'>
+  <view class='page-boxs'>
+    <image src='../../../../../assets/images/45.jlldhs.png'></image>
+  </view>
+  <view class='adviceTxt'>
+    <view class='adviceauto'>
+      <view class='page_title'>
+        <text>浆液密度参考值</text>
+      </view>
+      <view class="table">
+        <view class="tr">
+          <view class="th">浆液类型</view>
+          <view class="th">浆液中固体物密度Pso/(g/cm³)</view>
+        </view>
+        <block>
+          <view class="trs">
+            <view class="td">石灰石浆液</view>
+            <view class="td">2.71</view>
+          </view>
+          <view class="trs">
+            <view class="td">石膏浆液</view>
+            <view class="td">2.32</view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
+
+

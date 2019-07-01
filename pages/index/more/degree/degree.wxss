@@ -1,0 +1,4 @@
+/* pages/index/more/degree/degree.wxss */
+page{
+  background-color: white;
+}

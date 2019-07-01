@@ -1,0 +1,135 @@
+<view class='pages pageopt' animation="{{slide_up}}">
+  <view class='header'>
+    <view class='headerinp'>
+      <view class="search">
+        <input placeholder="交流单相" bindfocus="inputSearch"/>
+        <icon type="search" size="15" />
+      </view>
+      <!-- <view class='meau'>
+      <navigator class="item" hover-class="none" url="/pages/profile/profile">
+        <text class='BDTfont yqhy'></text>
+      </navigator>  
+      <text class='BDTfont zk' catchtap='getExam'></text>
+      </view> -->
+    </view>
+    <view class='headerbot'>
+      <view class="item" id='qdao' catchtap='goBaidu'>
+        <text class='BDTfont qd'></text>
+        <text>签到</text>
+      </view>
+      <view class="item" id='phb' catchtap='goBaidu'>
+        <text class='BDTfont phb'></text>
+        <text>排行榜</text>
+      </view>
+      <view class="item" id='jsyy' catchtap='goBaidu'>
+        <text class='BDTfont jsyy'></text>
+        <text>计算应用</text>
+      </view>
+      <view class="item" id='zyyy' catchtap='goBaidu'>
+        <text class='BDTfont zyyy'></text>
+        <text>专业英语</text>
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section__titleColor">
+      <text>常用功能</text>
+      <text id='sz' class='szClass' bindtap='goBaidu'>设置</text>
+    </view>
+    <view class="grids">
+      <navigator class="item" hover-class="none" wx:for="{{list}}" url="{{item.Urls}}" id="{{item.Name}}" wx:key="item">
+        <text class='{{item.Icon}}' style='color:{{item.Color}}'></text>
+        <text>{{item.Name}}</text>
+      </navigator>
+      <navigator hover-class="none" class="item" url="/pages/index/more/more">
+        <text class='BDTfont icon-more'></text>
+        <text>更多</text>
+      </navigator>
+    </view>
+  </view>
+  <view class='elite' id='elite' catchtap='acquireClassExam'>
+    <view class='elite_list'>
+      <view style='margin-right:10rpx;'>
+        电力“精英杯”有奖竞赛
+      </view>
+      <view>
+        <text class='BDTfont jb'></text>
+      </view>
+    </view>
+  </view>
+  <view>
+    <swiper class="swiperdiv" indicator-dots="true" indicator-active-color="#009afe" autoplay="true">
+      <swiper-item id="cal" bindtap="goBaidu">
+        <view hover-class="none">
+          <view class='swiperText'>
+            <text class='textCorol'>电力百宝箱电力行业创新小工具</text>
+            <text>小程序一键助您轻松计算</text>
+          </view>
+          <view class='swiperImage'>
+            <image src="../../assets/images/home/2.jpg" mode="aspectFill" />
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item id="gw" bindtap="goBaidu">
+        <view hover-class="none">
+          <view class='swiperText'>
+            <text class='textCorol'>武汉博晟信息科技有限公司</text>
+            <text>专家级的解决方案服务商</text>
+          </view>
+          <view class='swiperImage'>
+            <image src="../../assets/images/home/lunbo.jpg" mode="aspectFill" />
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item id="icon" bindtap="goBaidu">
+        <navigator hover-class="none">
+          <view class='swiperText'>
+            <text class='textCorol'>常用电子元件图符实物照片学习</text>
+            <text>一眼识别专业图符</text>
+          </view>
+          <view class='swiperImage'>
+            <image src="../../assets/images/home/yjtf.png" mode="aspectFill" />
+          </view>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class='comment'>
+    <view class='comment_left color' id='dzkfz' catchtap='goBaidu'>
+      <view class='comment_dz'>点赞开发人员</view>
+      <text class='BDTfont dz'></text>
+    </view>
+    <view class='comment_center'>
+      <text>累计使用人数：</text>
+      <text>{{userNumbers}}人</text>
+    </view> 
+    <view class='comment_right color' id='wodliuy' catchtap='goBaidu'>
+      <view class='comment_dz'>我的留言</view>
+      <text class='BDTfont liuy'></text> 
+    </view>
+  </view>
+  <view class='news' catchtap='gotoNews' wx:for="{{shops}}" wx:key="{{item}}" data-viewpoint="{{item}}">
+    <view class='new_box'>
+      <view class='new_title'>
+        <image src='{{item.imgUrl}}'></image>
+      </view>
+    </view>
+    <view class='new_content'>
+      <text class='new_content_title'>{{item.Title}}</text>
+      <text class='new_content_title new_content_text'>摘要：{{item.Abstract}}</text>
+    </view>
+  </view>
+</view>
+<view class="container">
+  <alert id='alert' title='{{title}}' hidden='{{hidden}}' content='{{content}}' contentStr='{{contentStr}}' isArr='{{isArr}}' bind:cancelEvent="_cancelEvent" >
+  </alert>
+</view>
+<view wx:if="{{hasMore}}" class="loadmore loading">正在加载...</view>
+<view wx:else class="loadmore">没有更多数据了</view>
+<!-- <view class="example">
+  <view class="marquee_box">
+    <view class="marquee_text" style="{{orientation}}:{{marqueeDistance}}px;font-size: {{size}}px;">
+      {{text}}
+    </view>
+  </view>
+</view> -->

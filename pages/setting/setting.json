@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "设置",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "reload": "/components/reload/reload"
+  }
+}

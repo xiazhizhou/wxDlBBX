@@ -1,0 +1,58 @@
+<!--pages/index/more/rateout/rateout.wxml-->
+<view class='page'>
+  <view class="section">
+    <view class="section__title">输入：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item2">
+        <text>入口过空系数α1：</text>
+        <view class='flexInputbox2'>
+          <input class='flex-input' id='rkValue' value='{{rkValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          
+        </view>
+      </view>
+      <view class="flex-item2">
+        <text>出口过空系数α2：</text>
+        <view class='flexInputbox2'>
+          <input class='flex-input' id='ckValue' value='{{ckValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+         
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section__title">输出：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item2">
+        <text>漏风率：</text>
+        <view class='flexInputbox2'>
+          <input class='flex-input' value='{{list[0]}}' type='digit' disabled='disabled' />
+          
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section section-mt">
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <button class='flex-btn' catchtap='compute'>
+          一键计算
+        </button>
+      </view>
+      <view class="flex-item bc_green">
+        <button class='flex-btn' catchtap='clear'>
+          一键清除
+        </button>
+      </view>
+    </view>
+  </view>
+  <view class='img'>
+    <view class="section__title">计算公式：</view>
+    <view class='img-box'>
+      <image src='../../../../assets/images/11.lfl.png'></image>
+    </view>
+    <view class="section__title img-text">
+      <text>α1：入口过量空气系数;</text>
+      <text>α2：出口过量空气系数;</text>
+    </view>
+  </view>
+</view>

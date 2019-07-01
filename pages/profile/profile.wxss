@@ -1,0 +1,56 @@
+.authority{
+  color: white;
+  overflow: hidden;
+}
+.authority_header{
+  width: 100%;
+  height: 140rpx;
+  background-color:#0099ff; 
+  display: flex;
+}
+.authority_hleft{
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.authority_hleft .authority_tx{
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 20rpx;
+}
+.authority_hleft .authority_tx image{
+  width: 100%;
+  height: 100%;
+}
+.authority_header .authority_box{
+  display: flex;
+}
+.authority_header .authority_box .authority_name{
+  display: flex;
+  align-items: center;
+}
+.authority .authority_header .authority_hright{
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.authority_ls{
+  font-size: 14px;
+  opacity: 0.6;
+}
+.authority_dj{
+  margin-right: 40rpx;
+}
+.authority_dj .fontColor{
+  color:#fcce3b;
+}
+
+.authority-list{
+  color: black;
+  margin-top: 20rpx;
+}
+.authority-list .weui-cells{
+  margin-bottom: 20rpx;
+}

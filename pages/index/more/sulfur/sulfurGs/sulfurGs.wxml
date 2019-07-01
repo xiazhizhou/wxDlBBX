@@ -1,0 +1,34 @@
+<!--pages/index/more/sulfur/sulfurGs/sulfurGs.wxml-->
+<view class='pages'>
+  <view class='page-boxs'>
+    <image src='../../../../../assets/images/21.SO2.png'></image>
+  </view>
+  <view class='adviceTxt'>
+    <view class='adviceauto'>
+      <view class='page_title'>
+        <text>煤中硫转化成SO2的转化率F参考值</text>
+      </view>
+      <view class="table">
+        <view class="tr">
+          <view class="th">锅炉类型</view>
+          <view class="th">煤中S转化成SO2转化率/% </view>
+        </view>
+        <block>
+          <view class="trs">
+            <view class="td">火力发电厂锅炉</view>
+            <view class="td">90</view>
+          </view>
+          <view class="trs">
+            <view class="td">工业锅炉</view>
+            <view class="td">85</view>
+          </view>
+          <view class="trs">
+            <view class="td">营业性锅炉</view>
+            <view class="td">80</view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
+

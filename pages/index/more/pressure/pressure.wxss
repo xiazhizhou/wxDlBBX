@@ -1,0 +1,4 @@
+/* pages/index/more/steammeter/pressure/pressure.wxss */
+page{
+  background-color: white;
+}

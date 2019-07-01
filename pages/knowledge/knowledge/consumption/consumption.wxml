@@ -1,0 +1,103 @@
+<!--pages/knowledge/knowledge/consumption/consumption.wxml-->
+<view class='pagebox'>
+  <view class="section">
+    <view class='page_text'>
+      <view class='pagex_box'>
+        <view class='page_xh xh'>
+          A
+        </view>
+        <view class='pagetext_flex'>
+          <text>600~1000MW级超超临界节流调节湿冷机组</text>
+        </view>
+      </view>
+      <view class='pagex_box'>
+        <view class='page_xh xh2'>
+          B
+        </view>
+        <view class='pagetext_flex'>
+          <text>600~1000MW级超超临界喷嘴调节湿冷机组</text>
+        </view>
+      </view>
+      <view class='pagex_box'>
+        <view class='page_xh xh3'>
+          C
+        </view>
+        <view class='pagetext_flex'>
+          <text>350~600MW级超临界湿冷机组</text>
+        </view>
+      </view>
+      <view class='pagex_box'>
+        <view class='page_xh xh4'>
+          D
+        </view>
+        <view class='pagetext_flex'>
+          <text>600MW级超临界汽动泵空冷机组</text>
+        </view>
+      </view>
+      <view class='pagex_box'>
+        <view class='page_xh xh5'>
+          E
+        </view>
+        <view class='pagetext_flex'>
+          <text>300~600MW级亚临界汽动泵湿冷机组</text>
+        </view>
+      </view>
+      <view class='pagex_box'>
+        <view class='page_xh xh6'>
+          F
+        </view>
+        <view class='pagetext_flex'>
+          <text>300MW级亚临界电动泵湿冷机组</text>
+        </view>
+      </view>
+      <view class='pagex_box'>
+        <view class='page_xh xh7'>
+          G
+        </view>
+        <view class='pagetext_flex'>
+          <text>600MW级亚临界汽动泵空冷机组</text>
+        </view>
+      </view>
+      <view class='pagex_box'>
+        <view class='page_xh xh8'>
+          H
+        </view>
+        <view class='pagetext_flex'>
+          <text>300~600MW级亚临界电动泵空冷机组</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class='page_table'>
+      <view class='page_title'>
+        <text>不同机组耗差系数</text>
+      </view>
+      <view class="table">
+        <view class='tr table_tr'>
+          <view class="ths"><text>机组类型</text></view>
+          <view class="ths2"><text>发电煤耗率变化量(g/kW)</text></view>
+        </view>
+        <block wx:for="{{list}}" wx:key="item">
+          <view class="tr">
+            <view class="td" style="background=color:{{item.color}}">{{item.code}}</view>
+            <view class="td">{{item.value}}</view>
+            <view class="td">{{item.txt}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class='page_bz'>
+      <view class='page_auto'>
+        <view>
+          注：表中给出的煤耗率变化量是指在相应的负荷系数下与100%时的差值。
+        </view>
+      </view>
+    </view>
+    <view class='page_gb'>
+      <view>
+        <text>参考书籍: 火电厂节能减排手册</text>
+      </view>
+    </view>
+  </view>
+</view>

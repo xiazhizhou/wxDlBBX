@@ -1,0 +1,24 @@
+<!--pages/index/eliteCup/eliteCup.wxml-->
+<view class='wx-user'>
+  <view class='wx-user-box wx-user-top'>
+    <view class='wx-user-title'>比赛介绍</view>
+    <view class='wx-userbor'></view>
+    <view class='wx-user-content'>
+      <view class='wx-user-contentflex' wx:for="{{list}}" wx:key="{{item}}" wx:for-index="bindex">
+        <view>{{bindex+1}}、</view>
+        <view>
+          {{item}};
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='wx-user-bottom ranking'>
+    <view class='rankingmargin'>
+      <button class="weui-btn mini-btn btnSize btncolop" id='dt' type="warn" size="mini" catchtap='goto'>开始答题</button>
+    </view>
+    <view class='rankingmargin'>
+      <button class="weui-btn mini-btn btnSize btncoloc" id='ly' type="warn" size="mini" catchtap='goto'>留言信息</button>
+    </view>
+  </view>
+</view>
+

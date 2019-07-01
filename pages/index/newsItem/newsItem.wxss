@@ -1,0 +1,28 @@
+/* pages/index/newsItem/newsItem.wxss */
+page{
+  background-color: white;
+}
+.news-box{
+  width: 100%;
+}
+.news-box .news-boxauto{
+  width: 96%;
+  margin: 0 auto;
+}
+.news-box .news-boxauto .news-title{
+  font-size: 32rpx;
+  font-weight:bold;
+  margin: 40rpx 10rpx;
+  text-align: center;
+}
+.news-box .news-boxauto .news-img{
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+.news-box .news-boxauto .news-img image{
+  width: 100%;
+}
+.news-box .news-boxauto .news-abstract{
+  padding:40rpx 0; 
+  text-indent: 60rpx;
+}

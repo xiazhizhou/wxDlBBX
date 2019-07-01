@@ -1,0 +1,28 @@
+<!--pages/profile/registers/registers.wxml-->
+<view class='wx-registers'>
+  <view class='wx-registers-auto'>
+    <view class='wx-registers-top'>
+      <view class='wx-registers-title'>请输入所在单位名称</view>
+      <view class='wx-input'>
+        <input value='{{organization}}' bindinput ="bindKeyInput" placeholder="请输入所在单位名称" auto-focus />
+      </view>
+    </view>
+    <view class='wx-registers-center'>
+      <view catchtap='saveOrUpdateUserAccount'><button id='xzt' class="weui-btn mini-btn btnSize btnbule"  type="warn" size="mini">确认</button></view>
+    </view>
+    <view class='wx-registers-zbottom'>
+      <view class='wx-registers-fh'>首次登记单位名称，奖励5张复活卡</view>
+      <view class='wx-registers-btnn'>
+        <button id='xzt' class="weui-btn mini-btn btnbule"  type="warn" size="mini">已授权</button>
+      </view>
+    </view>
+    <!-- <view class='wx-registers-bottom'>
+      <view class='wx-registers-tx'>头像和昵称已授权</view>
+    </view> -->
+    <!-- <view class='wx-registers-goback'>
+      <view class='wx-registers-go'>
+        <button id='xzt' catchtap='backEexa' class="weui-btn mini-btn btnSize btngreen"  type="warn" size="mini">返回题库</button>
+      </view>
+    </view> -->
+  </view>
+</view>

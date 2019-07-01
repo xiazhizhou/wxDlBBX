@@ -1,0 +1,11 @@
+/* pages/index/more/powerwater/powerwater.wxss */
+page{
+  background-color: white;
+}
+.page .flex-item {
+  justify-content:space-around;
+}
+
+.page .flex-item text{
+  width: 190rpx;
+}

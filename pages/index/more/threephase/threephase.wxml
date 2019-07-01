@@ -1,0 +1,203 @@
+<!--pages/index/more/threephase/threephase.wxml-->
+<view class="pages">
+  <view class="page__bd {{powerStatus?'name':''}}" id='power' catchtap='switchTab'>
+    <text>功率</text>
+  </view>
+  <view class="page__bd {{elecStatus?'name':''}}" id='electricity' catchtap='switchTab'>
+    <text>电流</text>
+  </view>
+  <view class="page__bd {{pressureStatus?'name':''}}" id='pressure' catchtap='switchTab'>
+    <text>电压</text>
+  </view>
+</view>
+
+<view class='page' wx:if="{{powerStatus}}">
+  <view class="section">
+    <view class="section__title">输入：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <text>电压U：</text>
+        <view class='flexInputbox'>
+          <input class='flex-input' id='dyValue' value='{{dyValue}}' type="digit" placeholder-style="color:#c4c5c7" placeholder="输入数值" bindinput ="bindKeyInput"/>
+          <view class='text'>V</view>
+        </view>
+      </view>
+      <view class="flex-item bc_green">
+        <text>电流I：</text>
+        <view class='flexInputbox'>
+          <input class='flex-input' id='dlValue' value='{{dlValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput ="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>A</view>
+        </view>
+      </view>
+      <view class="flex-item bc_green">
+        <text>功率因数cosØ：</text>
+        <view class='flexInputbox'>
+          <input class='flex-input' id='gsValue' value='{{gsValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput ="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>100%</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section__title">输出：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_red">
+        <text>功率P：</text>
+        <view class='flexInputbox'>
+          <input class='flex-input' value='{{list[0]}}' disabled='disabled' type="digit" />
+          <view class='text'>W</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section section-mt">
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <button class='flex-btn' id='gl' catchtap='compute'>
+          一键计算
+        </button>
+      </view>
+      <view class="flex-item bc_green">
+        <button class='flex-btn' id='gl' catchtap='clear'>
+          一键清除
+        </button>
+      </view>
+    </view>
+  </view>
+  <view class='img'>
+    <view class="section__title">计算公式：</view>
+    <view class='img-box'>
+      <image src='../../../../assets/images/30.sxjlgl.png'></image>
+    </view>
+    <view class='section__title'>
+      <text>功率因数cosØ取值范围：0~1</text>
+    </view>
+  </view>
+</view>
+<view class='page' wx:if="{{elecStatus}}">
+  <view class="section">
+    <view class="section__title">输入：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <text>功率P：</text>
+        <view class='flexInputbox'>
+          <input class='flex-input' id='gl2Value' value='{{gl2Value}}' type="digit" bindinput="bindKeyInput" placeholder-style="color:#c4c5c7" placeholder="输入数值"/>
+          <view class='text'>W</view>
+        </view>
+      </view>
+      <view class="flex-item bc_green">
+        <text>电压U：</text>
+        <view class='flexInputbox'>
+          <input class='flex-input' id='dy2Value' value='{{dy2Value}}' type="digit" bindinput="bindKeyInput" placeholder-style="color:#c4c5c7" placeholder="输入数值" />
+          <view class='text'>V</view>
+        </view>
+      </view>
+      <view class="flex-item bc_green">
+        <text>功率因数cosØ：</text>
+        <view class='flexInputbox'>
+          <input class='flex-input' id='gs2Value' value='{{gs2Value}}' type="digit" bindinput="bindKeyInput" placeholder-style="color:#c4c5c7" placeholder="输入数值" />
+          <view class='text'>100%</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section__title">输出：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_red">
+        <text>电流I：</text>
+        <view class='flexInputbox'>
+          <input class='flex-input' value='{{list2[0]}}' disabled='disabled' type="digit" />
+          <view class='text'>A</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section section-mt">
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <button class='flex-btn' id='dl' catchtap='compute'>
+          一键计算
+        </button>
+      </view>
+      <view class="flex-item bc_green">
+        <button class='flex-btn' id='dl' catchtap='clear'>
+          一键清除
+        </button>
+      </view>
+    </view>
+  </view>
+  <view class='img'>
+    <view class="section__title">计算公式：</view>
+    <view class='img-box'>
+      <image src='../../../../assets/images/31.sxjldl.png'></image>
+    </view>
+    <view class='section__title'>
+      <text>功率因数cosØ取值范围：0~1</text>
+    </view>
+  </view>
+</view>
+
+<view class='page' wx:if="{{pressureStatus}}">
+  <view class="section">
+    <view class="section__title">输入：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <text>功率P：</text>
+        <view class='flexInputbox'>
+          <input class='flex-input' id='gl3Value' value='{{gl3Value}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值"/>
+          <view class='text'>W</view>
+        </view>
+      </view>
+      <view class="flex-item bc_green">
+        <text>电流I：</text>
+        <view class='flexInputbox'>
+          <input class='flex-input' id='dl3Value' value='{{dl3Value}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>A</view>
+        </view>
+      </view>
+      <view class="flex-item bc_green">
+        <text>功率因数cosØ：</text>
+        <view class='flexInputbox'>
+          <input class='flex-input' id='gs3Value' value='{{gs3Value}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>100%</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section__title">输出：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_red">
+        <text>电压U：</text>
+        <view class='flexInputbox'>
+          <input class='flex-input' value='{{list3[0]}}' disabled='disabled' type="digit" />
+          <view class='text'>V</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section section-mt">
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <button class='flex-btn' id='dy' catchtap='compute'>
+          一键计算
+        </button>
+      </view>
+      <view class="flex-item bc_green">
+        <button class='flex-btn' id='dy' catchtap='clear'>
+          一键清除
+        </button>
+      </view>
+    </view>
+  </view>
+  <view class='img'>
+    <view class="section__title">计算公式：</view>
+    <view class='img-box'>
+      <image src='../../../../assets/images/32.sxjldy.png'></image>
+    </view>
+    <view class='section__title'>
+      <text>功率因数cosØ取值范围：0~1</text>
+    </view>
+  </view>
+</view>

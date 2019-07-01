@@ -1,0 +1,4 @@
+/* pages/index/more/steammeter/temperature/temperature.wxss */
+page{
+  background-color: white;
+}

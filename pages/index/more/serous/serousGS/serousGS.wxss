@@ -1,0 +1,74 @@
+/* pages/index/more/serous/serousGS/serousGS.wxss */
+.pages .adviceauto .page_title{
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.pages .adviceauto .table {
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.pages .adviceauto .tr {
+  display: flex;
+  width: 100%;
+  height: 120rpx;
+  font-size: 30rpx;
+  align-items: center;
+  justify-content: center;
+}
+.pages .adviceauto  .trs{
+  display: flex;
+  width: 100%;
+  height: 50rpx;
+  font-size: 30rpx;
+  align-items: center;
+  justify-content: center;
+}
+.pages .adviceauto .td {
+  width: 50%;
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+}
+.pages .adviceauto .tds {
+  width: 33.3333333%;
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.pages .adviceauto .th {
+  width: 50%;
+  height: 120rpx;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+}
+.pages .adviceauto .ths {
+  width: 33.3333333%;
+  height: 150rpx;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+}
+.adviceauto:last-child{
+  padding-bottom: 40rpx!important;
+}

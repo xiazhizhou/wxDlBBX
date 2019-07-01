@@ -1,0 +1,13 @@
+/* pages/index/more/discharge/discharge.wxss */
+page{
+  background-color: white;
+}
+
+.page .flex-item {
+  justify-content:space-around;
+}
+
+.page .flex-item text{
+  width: 220rpx;
+}
+

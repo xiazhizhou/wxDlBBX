@@ -1,0 +1,22 @@
+<!--pages/index/more/discharge/advice/advice.wxml-->
+<view class='pages'>
+  <view class='page-boxs'>
+    <image src='../../../../../assets/images/12.glpwl.png'></image>
+  </view>
+  <view class='adviceTxt adviceTxts'>
+    <view class='adviceauto'>
+      <view>
+        锅炉排污率规定：据测算，排污率每增加1%，会使燃料消耗量增加0.3%左右，所以在保证锅炉水、汽质量的前提下要尽量减少锅炉排污率。
+      </view>
+      <view>
+      通常，低压小容量锅炉排污率控制在5%-10%；对中、高压锅炉，以除盐水做补给水的凝汽式电厂，其排污率不大于1%；以软化水做补给水的凝汽式电厂，其排污率不大于2%； 以除盐水为补给水的热电厂，其排污率不大于2%；以软化水为补给水的凝汽式电厂，其排污率不大于5%。
+      </view>
+      <view>
+      同时为了防止因排污率过小，而使炉内有水渣积聚，锅炉的排污率也不应小于0.3%。
+      </view>
+    </view>
+  </view>
+</view>
+
+
+

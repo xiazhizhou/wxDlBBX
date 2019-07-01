@@ -1,0 +1,17 @@
+<!--pages/knowledge/knowledge/inicon/inicon.wxml-->
+<reload id='reload' buttonText='重 试' message='请求失败' isShow="{{is_loadmore}}" bind:reload="_reload">
+</reload>
+<view class="pages" wx:if='{{!is_loadmore}}'>
+  <view id="{{item.ID}}" wx:for="{{list}}" wx:for-index="index" wx:key="{{item}}" catchtap="getFlowchart" class="page__bd {{status[index]?'name':''}}">
+    <text>{{item.NAME}}</text>
+  </view>
+</view>
+  <view class="section">
+    <view class="grids">
+      <navigator open-type="navigateTo" hover-class="none" class="item" wx:for="{{listArr}}" bindtap='navtor' wx:key="item">
+        <image src="{{item.IMG}}"></image>
+        <text>{{item.NAME}}</text>
+      </navigator>
+    </view>
+  </view>
+

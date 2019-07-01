@@ -1,0 +1,12 @@
+<!--pages/question/generalItem/wdtpage/wdtpage.wxml-->
+<view class='wx-wdt'>
+  <view class='wx-wdt-auto'>
+    <view class='wx-wdt-title'>
+      <view class='wx-wdt-bh'></view>
+      <view class='wx-wdt-h4'>请点击问题查看答案</view>
+    </view>
+    <view wx:for="{{list}}" data-index="{{index}}" data-viewpoint="{{item}}" catchtap='goUrl'>
+      {{index+1}}、{{item.QuestionName}} 
+    </view>
+  </view>
+</view>

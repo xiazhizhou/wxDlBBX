@@ -1,0 +1,59 @@
+<!--pages/question/generalItem/answerResult/answerResult.wxml-->
+<view class='wx-result-content'>
+  <view class='wx-top'>
+    <view class='wx-top-shang'>
+      <text class='wx-top-font'>{{score}}</text>
+      <text>/100分</text>
+    </view>
+    <view class='wx-top-xia'>
+      <view class='wx-top-item'>
+        <view>已击败考生</view>
+        <text>{{overCountUsers}}人</text>
+      </view>
+      <view class='wx-top-item'>
+        <view>全站平均分</view>
+        <text>{{overPercentage}}分</text>
+      </view>
+      <view class='wx-top-item'>
+        <view>得分率</view>
+        <text>{{dfl}}%</text>
+      </view>
+    </view>
+  </view>
+  <view class='wx-hr'></view>
+  <view class='wx-center'>
+    <view class='wx-centerauto'>
+      <view class='wx-kang'></view>
+      <view>单项选择题</view>
+    </view>
+    <view class='wx-tm'>
+      <view class='wx-tm-btn' wx:for="{{list}}" wx:key="item" wx:for-index="bindex" catchtap='clickExem' data-id="{{bindex}}" catchtap='saveGoto'>
+        <view class="wx-tm-item {{'class'+item.answerState}}">{{bindex+1}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='wx-bottom'>
+    <view class='wx-bottom-bottom' wx:if="{{typeExam}}">
+      <view class='wx-bottom-item'>
+        <view class='wx-btn-daan' catchtap='goto'>查看题目解析</view>
+      </view>
+      <view class='wx-bottom-item'>
+        <button class='getShareInfo' open-type="share">晒一晒</button>
+      </view>
+      <view class='wx-bottom-item' catchtap='goback'>
+        <view class='wx-btn-daan'>返回答题</view>
+      </view> 
+    </view>
+    <view class='wx-bottom-bottom' wx:if="{{!typeExam}}">
+      <view class='wx-bottom-item'>
+       
+      </view>
+      <view class='wx-bottom-item' catchtap='gobacks'>
+        <view class='wx-btn-daan'>开始答题</view>
+      </view> 
+      <view class='wx-bottom-item'>
+        
+      </view>
+    </view>
+  </view>
+</view>

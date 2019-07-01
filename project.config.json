@@ -1,0 +1,59 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"uglifyFileName": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.0",
+	"appid": "wx1bd259d533ffff24",
+	"projectname": "%E7%94%B5%E5%8A%9B%E7%99%BE%E5%AE%9D%E7%AE%B1",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "自定义转发",
+					"pathName": "pages/index/index",
+					"scene": "1044",
+					"shareInfo": {
+						"groupName": "测试模拟群3",
+						"shareName": "r4pSU7cL_z72-X5O3ZN4oh3Q1-5_-VQUZKJXkK90r1Q@cr4dev",
+						"shareKey": "RmWPgm36tkejDKj3__MhO-baJbBrUm0nT2iX9_Q6lTJqLAx62PjQs_tq_K_btRf4a7O-Q7q1pETnlEwKa1dAMA~~"
+					}
+				}
+			]
+		}
+	}
+}

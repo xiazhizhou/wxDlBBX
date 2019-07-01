@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "工艺流程图符",
+  "usingComponents": {
+    "reload": "../../../../components/reload/reload"
+  }
+}

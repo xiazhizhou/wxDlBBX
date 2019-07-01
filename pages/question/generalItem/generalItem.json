@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "通用题库",
+  "usingComponents": {
+    "alert": "/components/alert/alert"
+  }
+}

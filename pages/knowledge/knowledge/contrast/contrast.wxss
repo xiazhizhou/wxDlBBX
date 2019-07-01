@@ -1,0 +1,39 @@
+/* pages/knowledge/knowledge/samaicon/samaicon.wxss */
+/* 菜单样式 */
+page{
+  background-color:white!important; 
+}
+.section{
+  margin-bottom: 20rpx; 
+}
+
+.grids {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;  
+}
+
+.grids .item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  padding: 40rpx 36rpx;
+  box-sizing: border-box;
+}
+
+.grids .item text:nth-child(2){
+  width: 180rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 26rpx;
+} 
+.grids .item image{
+  width: 100%;
+  height: 50rpx;
+  margin-bottom: 20rpx;
+}

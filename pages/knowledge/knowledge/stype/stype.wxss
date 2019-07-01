@@ -1,0 +1,115 @@
+/* pages/knowledge/knowledge/stype/stype.wxss */
+.pages{
+  width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 9999999;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 90rpx;
+  line-height: 90rpx;
+  background: #ffffff;
+  border-bottom: 2rpx solid #dedede;
+}
+.pages .page__bd{
+  position: relative;
+  width: 33.3333333%;
+  text-align: center;
+}
+.pages .name{
+  color: #29a8fd;
+}
+.pages .name:before{
+  content: "";
+  border-width: 16rpx;
+  border-style: solid;
+  border-color: transparent transparent #0099ff transparent;
+  position:absolute;
+  bottom: 0;
+  left:112rpx;
+}
+.pagebox{
+  position: absolute;
+  top: 90rpx;
+}
+.pagebox .page_text {
+  width: 92%;
+  color: #29a8fd;
+  margin: 0 auto;
+  font-size: 26rpx;
+}
+
+.pagebox .section {
+  background-color: white;
+  margin-bottom: 10rpx;
+}
+
+.pagebox .page_text view:first-child {
+  padding-top: 10rpx;
+}
+
+.pagebox .page_text view:last-child {
+  padding-bottom: 10rpx;
+}
+
+.pagebox .section .page_bz {
+  background-color: #f5f3f4;
+}
+
+.pagebox .section .page_auto {
+  width: 92%;
+  margin: 0 auto;
+  font-size: 28rpx;
+}
+
+.pagebox .section .page_gb {
+  font-size: 32rpx;
+  width: 92%;
+  margin: 0 auto;
+  padding: 20rpx 0;
+  text-align: center;
+}
+.pagebox .section .page_gb text{
+  font-size: 34rpx;
+}
+
+.pagebox .section .page_table {
+  width: 92%;
+  margin: 0 auto;
+  margin-bottom: 60rpx;
+}
+.pagebox .section .page_table .page_title{
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.pagebox .section .page_table .table {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.pagebox .section .page_table .tr {
+  display: flex;
+  width: 100%;
+  height: 50rpx;
+  align-items: center;
+}
+
+.pagebox .section .page_table .td {
+  width: 50%;
+  justify-content: center;
+  text-align: center;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.pagebox .section .page_table .th {
+  width: 50%;
+  justify-content: center;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}

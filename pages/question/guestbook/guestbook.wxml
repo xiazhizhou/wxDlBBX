@@ -1,0 +1,51 @@
+<!--pages/question/guestbook/guestbook.wxml-->
+<view class='authority'>
+  <view class='authority_header'>
+    <view class='authority_hleft'>
+      <view class='authority_box'>
+        <view class='authority_tx'>
+          <image src="{{item.ImageUrl}}" mode="scaleToFill"></image>
+        </view>
+      </view>
+    </view>
+    <view class='authority_hright'>
+      <view>
+        <view class='authority_fhk'>
+          <text>电力百宝箱</text>
+        </view>
+        <view class='authority_ls'>
+          <text>用户身份：</text>
+          <text>{{item.Name}}</text>
+        </view>
+      </view>
+      <view class='authority_dj'>
+        <text>等级：</text>
+        <text class='fontColor'>{{item.Level}}V</text>
+      </view>
+    </view>
+  </view>
+  <view class='textColor'>
+    <view class="weui-cells__title">留言：</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">
+          <textarea class="weui-textarea" id='contact' value='{{contact}}' placeholder="请输入文本" style="height: 3.3em" bindinput ="bindKeyInput" />
+          <!-- <view class="weui-textarea-counter"></view> -->
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='textColor'>
+    <view class="weui-cells__title">联系电话或微信：（选填）</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <input class="weui-input" id='messageInfo' type='number' value='{{messageInfo}}' placeholder="请输入联系电话或微信" bindinput ="bindKeyInput" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-btn-area submit">
+    <button class="weui-btn" type="primary" bindtap="showTopTips">提交</button>
+  </view>
+</view>

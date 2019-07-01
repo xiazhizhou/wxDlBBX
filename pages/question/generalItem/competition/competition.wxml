@@ -1,0 +1,27 @@
+<!--pages/question/generalItem/competition/competition.wxml-->
+<view class='wx-user'>
+  <view class='wx-user-box wx-user-top'>
+    <view class='wx-user-title'>答题说明</view>
+    <view class='wx-userbor'></view>
+    <view class='wx-user-content'>
+      <view class='wx-user-contentflex' wx:for="{{list}}" wx:key="{{item}}" wx:for-index="bindex">
+        <view>{{bindex+1}}、</view>
+        <view>
+          {{item}};
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='wx-user-bottom ranking'>
+    <view class='rankingzt'>
+      <text>当前状态：</text>
+      <text class="{{loginStatus=='未登记'?'red':'white'}}">{{loginStatus}}</text>
+    </view>
+    <view class='rankingmargin'>
+      <button class="weui-btn mini-btn btnSize btncolop" type="warn" size="mini" catchtap='goto'>开始答题</button>
+    </view>
+    <view class='rankingmargin'>
+      <button catchtap='registers' class="weui-btn mini-btn btnSize btncoloc" type="warn" size="mini">登记信息</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,64 @@
+<!--pages/index/more/tabsearch/couple2/couple2.wxml-->
+<view class='page'>
+  <view class="section">
+    <view class="section__title">输入：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <text>E型热电偶电压U：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='drValue' value='{{drValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>mV</view>
+        </view>
+      </view>
+      <view class="flex-item bc_green">
+        <text>补偿冷端温度T1：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='ldValue' value='{{ldValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>℃</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section__title">输出：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <text>温度T：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' value='{{list[0]}}' type='digit' disabled='disabled' />
+          <view class='text'>℃</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section section-mt">
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <button class='flex-btn' catchtap='compute'>
+          一键计算
+        </button>
+      </view>
+      <view class="flex-item bc_green">
+        <button class='flex-btn' catchtap='clear'>
+          一键清除
+        </button>
+      </view>
+    </view>
+  </view>
+  <view class='img'>
+    <view class="section__title">计算公式：</view>
+    <view class='img-box'>
+      <image src='../../../../../assets/images/36.edoyzdy.png'></image>
+    </view>
+    <view class="section__title img-text">
+      <text>电压值U取值范围：0~76.3mV</text>
+      <text>补偿冷端温度T1范围：0~60℃</text>
+    </view>
+  </view>
+</view>
+
+
+
+
+
+

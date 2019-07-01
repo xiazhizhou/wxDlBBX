@@ -1,0 +1,4 @@
+/* pages/index/more/resistance/resistance.wxss */
+.page__bd .weui-cells__title{
+  text-align: center;
+}

@@ -1,0 +1,21 @@
+<!--pages/question/generalItem/wdtpage/wdtdetails/wdtdetails.wxml-->
+<view class='authoritys'>
+  <view class='decide-dati'>
+    <view>
+      {{index+1}}、{{list[index].QuestionName}}
+    </view>
+    <view class='decide-datiauto'>
+     {{list[index].ShowAllAnswers[0]}}
+    </view>
+  </view>
+  <view class='decide-footer'>
+    <view class='decide-footerauto'>
+      <view></view>
+      <view catchtap='previous'>上一题</view>
+      <view class='collectionfont'></view>
+      <view catchtap='next'>下一题</view>
+      <view></view>
+    </view>
+  </view>
+</view>
+

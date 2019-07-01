@@ -1,0 +1,221 @@
+/* pages/knowledge/knowledge/incson/incson.wxss */
+.pages{
+  width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 9999999;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 90rpx;
+  line-height: 90rpx;
+  background: #ffffff;
+  border-bottom: 2rpx solid #dedede;
+}
+.pages .page__bd{
+  position: relative;
+  width: 25%;
+  text-align: center;
+}
+.pages .name{
+  color: #29a8fd;
+}
+.pages .name:before{
+  content: "";
+  border-width: 16rpx;
+  border-style: solid;
+  border-color: transparent transparent #0099ff transparent;
+  position:absolute;
+  top:62rpx;
+  left:80rpx;
+}
+.pagebox{
+  width: 100%;
+  position: absolute;
+  top: 90rpx;
+}
+.pagebox .page_text {
+  width: 92%;
+  color: #29a8fd;
+  margin: 0 auto;
+  font-size: 26rpx;
+  padding: 20rpx 0;
+}
+
+.pagebox .section {
+  background-color: white;
+  margin-bottom: 10rpx;
+}
+
+.pagebox .section .page_bz {
+  background-color: #f5f3f4;
+}
+
+.pagebox .section .page_auto {
+  width: 92%;
+  margin: 0 auto;
+  font-size: 28rpx;
+}
+
+.pagebox .section .page_gb {
+  font-size: 32rpx;
+  width: 92%;
+  margin: 0 auto;
+  padding: 20rpx 0;
+  text-align:center;
+}
+.pagebox .section .page_gb text{
+  font-size: 32rpx;
+}
+
+.pagebox .section .page_table {
+  width: 92%;
+  margin: 0 auto;
+  margin-bottom: 60rpx;
+}
+.pagebox .section .page_table .page_title{
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.pagebox .section .page_table .table {
+  /* border-left: 1px solid black;
+  border-bottom: 1px solid black; */
+  border: 1rpx solid black;
+}
+
+.pagebox .section .page_table .tr {
+  display: flex;
+  width: 100%;
+  height: 50rpx;
+  align-items: center;
+}
+.pagebox .section .page_table .trs{
+  display: flex;
+  width: 100%;
+  height: 100rpx;
+  align-items: center;
+}
+.table_tr{
+  background-color: #f9f9f9;
+  border-bottom: 1rpx solid black;
+}
+
+.pagebox .section .page_table .tr:last-child .td{
+  border-bottom: 0;
+}
+.pagebox .section .page_table .td {
+  width: 33.3333333%;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 1rpx solid black;
+  border-right: 1rpx solid black;
+  box-sizing: border-box;
+}
+.pagebox .section .page_table .td:last-child{
+  border-right:0;
+}
+.pagebox .section .page_table .ths{
+  box-sizing: border-box;
+  width: 33.3333333%;
+  text-align:center;
+  border-right: 1rpx solid black;
+}
+.pagebox .section .page_table .ths2{
+  width: 66.6666667%;
+  text-align:center;
+}
+
+.pagebox .section .page_table .tds4{
+  width:25%;
+}
+
+.pagebox .section .page_table .thdy{
+  box-sizing: border-box;
+  width: 16.6666667%;
+  height: 100rpx;
+  border-right: 1rpx solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.pagebox .section .page_table  .thdy2{
+  box-sizing: border-box;
+  width: 25%;
+  height: 100rpx;
+  border-right: 1rpx solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.pagebox .section .page_table .thjl{
+  width: 83%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagebox .section .page_table .thjl2{
+  width: 75%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagex_box{
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.pagex_box:last-child{
+  margin-bottom: 0;
+}
+
+.pagex_box .pagetext_flex{
+  display: flex;
+  flex-direction:column;
+}
+.page_xh{
+  width: 34rpx;
+  height:60rpx;
+  line-height: 60rpx;
+  padding: 0 4rpx;
+  color: white;
+  margin-right: 20rpx;
+  text-align: center;
+}
+.pagex_box .xh{
+  background-color: #0099ff;
+}
+.pagex_box .xh2{
+  background-color: #fb667a;
+}
+.pagex_box .xh3{
+  width: 34rpx;
+  height:40rpx;
+  line-height: 40rpx;
+  padding: 0 4rpx;
+  color: white;
+  margin-right: 20rpx;
+  text-align: center;
+  background-color: #0099ff;
+}
+.pagex_box .pageXH{
+  background-color: #fb667a;
+}
+.pagex_box .pageXH2{
+  background-color: #1bc266;
+}
+.pagex_box .pageB2{
+  height: 150rpx;
+  line-height: 150rpx;
+}
+.pagex_box .pageXH3{
+  background-color: #f48221;
+}
+.pagex_box .pageXH4{
+  background-color: #0e8eab;
+}
+

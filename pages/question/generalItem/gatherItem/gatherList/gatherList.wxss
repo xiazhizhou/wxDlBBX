@@ -1,0 +1,103 @@
+/* pages/question/generalItem/gatherItem/gatherList/gatherList.wxss */
+page {
+  background: linear-gradient(180deg, #3e6df9, #2641a8 20%, #03002b);
+  position: relative;
+}
+
+.decide-daan {
+  position: fixed;
+  right: 30rpx;
+  bottom: 100rpx;
+}
+.body-view{
+  display: flex;
+  justify-content: center;
+}
+
+.collectionfont text{
+  font-size: 20px;
+}
+
+.green{
+  background-color: #24aa47!important;
+}
+.red{
+  background-color: #f03129!important;
+}
+.blue{
+  background-color: #0099ff!important;
+}
+.decide-footerauto .getShareInfo{
+  color: white;
+  background-color: white!important;
+}
+
+.decide-footer .decide-footerauto .getShareInfo{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+  font-size: 30rpx;
+}
+.wx-mask {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+.wx-tk{
+  width: 94%;
+  height: 1000rpx;
+  z-index: 50000;
+  overflow-y: auto;
+  background-color: #23224a;
+  position: absolute;
+  top: 40rpx;
+  left: 3%;
+  color: white;
+}
+.wx-tk .wx-header{
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #151635;
+  position: relative;
+}
+.wx-tk .wx-cuwu{
+  position: absolute;
+  right: 20rpx;
+}
+.wx-tm{
+  margin: 40rpx 0 0 40rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wx-tm .wx-tm-btn{
+  width: 16.6666667%;
+  margin-bottom: 30rpx;
+}
+.wx-tm .wx-tm-btn .wx-tm-item{
+  width: 70%;
+  height: 78rpx;
+  border-radius: 50%;
+  border: 2rpx solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 36rpx; 
+  box-sizing: border-box;
+  background-color: #23224a;
+}
+
+.searchH{
+  color: #f8c569;
+}
+.search{
+  color: gray;
+}

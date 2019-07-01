@@ -1,0 +1,27 @@
+/* pages/knowledge/knowledge/tronic/electronTf/electronTf.wxss */
+/* 菜单样式 */
+page{
+  background-color:white!important; 
+}
+.section{
+  background: white;
+  margin-bottom: 20rpx; 
+}
+.grids {
+  width: 92%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;  
+  background-color: #fff; 
+  box-sizing: border-box;
+  padding-top: 30rpx;
+}
+.grids .item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33.33333%;
+  height: 200rpx;
+  box-sizing: border-box;
+}

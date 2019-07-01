@@ -1,0 +1,9 @@
+<view class='wx_reload_container' wx:if="{{isShow}}">
+  <view class='wx-reload'>
+    <view class='wx-message'>
+      <text class='BDTfont jg'></text>
+      <text class='wx-text'>{{message}}</text>
+    </view>
+    <button bindtap="init">{{ buttonText }}</button>
+  </view>
+</view>

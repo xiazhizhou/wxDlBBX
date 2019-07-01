@@ -1,0 +1,14 @@
+<reload id='reload' 
+  buttonText='重 试'
+  message='请求失败'
+  isShow="{{is_loadmore}}"
+  bind:reload="_reload">
+</reload>
+<view wx:if='{{!is_loadmore}}' class="section">
+  <view class="grids">
+      <view class="item" wx:for="{{list}}" wx:key="item">
+        <image src="{{item.IMG}}"></image>
+        <text>{{item.NAME}}</text>
+      </view>
+    </view>
+</view> 

@@ -1,0 +1,4 @@
+/* pages/index/more/steammeter/pressuregz/pressuregz.wxss */
+page{
+  background-color: white;
+}

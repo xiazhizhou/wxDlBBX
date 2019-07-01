@@ -1,0 +1,4 @@
+/* pages/eliteExam/eliteExam.wxss */
+page{
+  background-color: white!important;
+}

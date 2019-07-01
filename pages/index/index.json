@@ -1,0 +1,10 @@
+{
+  "navigationBarTextStyle": "white",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 5,
+  "usingComponents": {
+    "alert": "/components/alert/alert",
+    "dialog": "/components/dialog/dialog"
+  }
+}

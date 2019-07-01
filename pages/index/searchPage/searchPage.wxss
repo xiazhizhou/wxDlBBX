@@ -1,0 +1,52 @@
+/* pages/index/searchPage/searchPage.wxss */
+page{
+  background-color: white;
+}
+.weui-bg{
+  background: white;
+  padding: 20rpx 0;
+}
+.weui-cells__title2{
+  color: black;
+  font-size: 32rpx;
+  margin-top: 0;
+  padding: 0 15px;
+  display: flex;
+  justify-content:space-between;
+}
+.weui-btn{
+  padding: 0 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap:wrap;
+}
+.weui-btn .weui-ben-item{
+  width: 160rpx;
+  display: flex;
+  justify-content: center;
+  background-color: #dbdbdb;
+  color: white;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+.weui-btn .weui-ben-item:last-child{
+  margin-right: 0;
+}
+.wx-views{
+  width: 100%;
+}
+.wx-views .wx-list{
+  width: 94%;
+  margin: 0 auto;
+  display: flex;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 2rpx solid #dedede;
+}
+.wx-views .wx-list .wx-img{
+  margin-right: 30rpx;
+}
+.wx-views .wx-list .fontsize{
+  font-size: 70rpx;
+}

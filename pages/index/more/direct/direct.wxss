@@ -1,0 +1,30 @@
+/* pages/index/more/direct/direct.wxss */
+page{
+  background-color:white!important; 
+}
+.pages{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  flex-wrap: wrap;
+  height: 90rpx;
+  background: #ffffff;
+  border-bottom: 2rpx solid #dedede;
+}
+.pages .page__bd{
+  position: relative;
+  width: 33.3333333%;
+  text-align: center;
+}
+.pages .name{
+  color: #29a8fd;
+}
+.pages .name:before{
+  content: "";
+  border-width: 16rpx;
+  border-style: solid;
+  border-color: transparent transparent #0099ff transparent;
+  position:absolute;
+  top:40rpx;
+  left:108rpx;
+}

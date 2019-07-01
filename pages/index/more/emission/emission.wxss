@@ -1,0 +1,12 @@
+/* pages/index/more/emission/emission.wxss */
+page{
+  background-color: white;
+}
+
+.page .flex-item {
+  justify-content:space-around;
+}
+
+.page .flex-item text{
+  width: 328rpx;
+}

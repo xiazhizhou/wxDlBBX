@@ -1,0 +1,66 @@
+<!--pages/index/more/steamfic/steamfic.wxml-->
+<view class='page'>
+  <view class="section">
+    <view class="section__title">输入：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <text>入口焓值H1：</text>
+        <view class='flexInputbox'>  
+          <input type="digit" id='rgValue' value='{{rgValue}}' placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" class='flex-input' placeholder="输入数值" />
+          <view class='text'>KJ/Kg</view>
+        </view>
+      </view>
+      <view class="flex-item bc_green">
+        <text>出口实际焓值H2：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='ckValue' value='{{ckValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>KJ/Kg</view>
+        </view>
+      </view>
+      <view class="flex-item bc_red">
+        <text>出口理论焓值HT：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='ckliValue' value='{{ckliValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>KJ/Kg</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section__title">输出：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_blue">
+        <text>汽机组效率η：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' value='{{list[0]}}' disabled='disabled' type='digit' />
+          <view class='text'>%</view>
+        </view>
+      </view>      
+    </view>
+  </view>
+  <view class="section section-mt">
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <button class='flex-btn' catchtap='compute'>
+          一键计算
+        </button>
+      </view>
+      <view class="flex-item bc_green" catchtap='clear'>
+        <button class='flex-btn'>
+          一键清除
+        </button>
+      </view>
+    </view>
+  </view>
+  <view class='img imgBox'>
+    <view class="section__title">
+      <text>计算公式：</text>
+    </view>
+    <view class='img-box'>
+      <image src='../../../../assets/images/9.qjzxl.png'></image>
+    </view>
+    <view class="section__title cktitle">
+      <text class='cktitleBg' catchtap='advice'>参考说明</text>
+    </view>
+  </view>
+</view>

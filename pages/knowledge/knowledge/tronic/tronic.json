@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "电子元件图符",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "reload": "../../../../components/reload/reload"
+  }
+}

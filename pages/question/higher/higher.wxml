@@ -1,0 +1,73 @@
+<!--pages/question/higher/higher.wxml-->
+<view class='wx-user'>
+  <view class='wx-user-box wx-user-top'>
+    <view class='wx-user-title'>用户等级说明</view>
+    <view class='wx-userbor'></view>
+    <view class='wx-user-content'>
+      <view class='wx-user-contentflex'>
+        <view>1、</view>
+        <view>所有用户，初始为V{{grade}}等级;</view>
+      </view>
+      <view class='wx-user-contentflex'>
+        <view>2、</view>
+        <view>
+          连续签到10天，则自动升至V1等级;
+        </view>
+      </view>
+      <view class='wx-user-contentflex'>
+        <view>
+          3、
+        </view>
+        <view>
+          连续签到30天，则自动升至V2等级
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- <view class='wx-user-box wx-user-center'>
+    <view class='wx-user-title'>等级特权说明</view>
+    <view class='wx-userbor'></view>
+     <view class='wx-user-content'>
+      <view class='wx-user-contentflex'>
+        <view>1、</view>
+        <view>等级：全部答题、阅读问答题等基本功能;</view>
+      </view>
+      <view class='wx-user-contentflex'>
+        <view>2、</view>
+        <view>
+          V1等级：获得收藏题目功能;
+        </view>
+      </view>
+      <view class='wx-user-contentflex'>
+        <view>
+          3、
+        </view>
+        <view>
+          V2等级：获得自动保存错题和错题集练习功能。
+        </view>
+      </view>
+    </view>
+  </view> -->
+  <view class='wx-user-box wx-user-right'>
+    <view class='wx-user-title'>特别说明</view>
+    <view class='wx-userbor'></view>
+    <view class='wx-user-content'>
+      <view class='wx-user-contentflex'>
+        <view>1、</view>
+        <view>点击页面右上角邀请按钮，才能记录新邀请用户数;</view>
+      </view>
+      <view class='wx-user-contentflex'>
+        <view>2、</view>
+        <view>
+          如急需快速获取特权，可进行留言说明情况。
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='wx-user-bottom ranking'>
+    <view>
+      <button class="weui-btn mini-btn btnSize btncolop" type="warn" size="mini" catchtap='goto'>用户留言</button>
+      <!-- <button class="weui-btn mini-btn btnSize btncoloc" type="warn" size="mini">刷新等级</button> -->
+    </view>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+/* pages/knowledge/knowledge/boiler/boiler.wxss */
+page{
+  background-color: white;
+}
+.page .page_p{
+  text-indent: 40rpx;
+  margin: 30rpx 0;
+}

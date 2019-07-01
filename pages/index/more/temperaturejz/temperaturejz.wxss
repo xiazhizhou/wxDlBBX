@@ -1,0 +1,4 @@
+/* pages/index/more/steammeter/temperaturejz/temperaturejz.wxss */
+page{
+  background-color: white;
+}

@@ -1,0 +1,4 @@
+/* pages/index/more/steammeter/temperatureHz/temperatureHz.wxss */
+page{
+  background-color: white;
+}

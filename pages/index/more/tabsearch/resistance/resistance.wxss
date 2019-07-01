@@ -1,0 +1,12 @@
+/* pages/index/more/tabsearch/resistance/resistance.wxss */
+page {
+  background-color: white;
+}
+
+.page .flex-item {
+  justify-content:space-around;
+}
+
+.page .flex-item text{
+  width: 280rpx;
+}

@@ -1,0 +1,25 @@
+<!--pages/index/more/resistance/resistance.wxml-->
+<view class="page__bd">
+  <view class="weui-cells__title">电阻</view>
+  <view class="weui-cells weui-cells_after-title">
+    <navigator url="/pages/index/more/tabsearch/resistance/resistance?name=电阻PT100已知电阻" class="weui-cell weui-cell_access" hover-class="none">
+      <view class="weui-cell__bd">电阻PT100已知电阻</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+    <navigator url="/pages/index/more/tabsearch/resistance2/resistance2?name=电阻Cu50已知电阻" class="weui-cell weui-cell_access" hover-class="none">
+      <view class="weui-cell__bd">电阻Cu50已知电阻</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+    <navigator url="/pages/index/more/tabsearch/resistance3/resistance3?name=电阻PT100已知温度" class="weui-cell weui-cell_access" hover-class="none">
+      <view class="weui-cell__bd">电阻PT100已知温度</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+    <navigator url="/pages/index/more/tabsearch/resistance4/resistance4?name=电阻Cu50已知温度" class="weui-cell weui-cell_access" hover-class="none">
+      <view class="weui-cell__bd">电阻Cu50已知温度</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+  </view>
+</view>
+
+
+

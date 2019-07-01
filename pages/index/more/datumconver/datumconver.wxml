@@ -1,0 +1,31 @@
+<!--pages/index/more/datumconver/datumconver.wxml-->
+<view class="page__bd">
+  <view class="weui-cells weui-cells_after-title">
+    <navigator url="/pages/index/more/datumconver/atmosphere/atmosphere?name=收到基与空气干燥基" class="weui-cell weui-cell_access" hover-class="none">
+      <view class="weui-cell__bd">收到基与空气干燥基</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+    <navigator url="/pages/index/more/datumconver/atmosphere2/atmosphere2?name=收到基与干燥基" class="weui-cell weui-cell_access" hover-class="none">
+      <view class="weui-cell__bd">收到基与干燥基</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+    <navigator url="/pages/index/more/datumconver/atmosphere3/atmosphere3?name=收到基与干燥无灰基" class="weui-cell weui-cell_access" hover-class="none">
+      <view class="weui-cell__bd">收到基与干燥无灰基</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+    <navigator url="/pages/index/more/datumconver/atmosphere4/atmosphere4?name=空气干燥基与干燥基" class="weui-cell weui-cell_access" hover-class="none">
+      <view class="weui-cell__bd">空气干燥基与干燥基</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+    <navigator url="/pages/index/more/datumconver/atmosphere5/atmosphere5?name=空气干燥基与干燥无灰基" class="weui-cell weui-cell_access" hover-class="none">
+      <view class="weui-cell__bd">空气干燥基与干燥无灰基</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+    <navigator url="/pages/index/more/datumconver/atmosphere6/atmosphere6?name=干燥基与干燥无灰基" class="weui-cell weui-cell_access" hover-class="none">
+      <view class="weui-cell__bd">干燥基与干燥无灰基</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+  </view>
+</view>
+
+

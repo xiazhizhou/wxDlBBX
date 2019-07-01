@@ -1,0 +1,46 @@
+<!--pages/index/eliteCup/eliteCupSelected/eliteCupResult/eliteCupResult.wxml-->
+<view class='wx-user'>
+  <view class='wx-user-box wx-user-top'>
+    <view class='wx-user-title'>比赛结果</view>
+    <view class='wx-userbor'></view>
+    <view class='wx-user-content'>
+      <view class='wx-user-contentflex'>
+        <view>1、</view>
+        <view>
+          比赛时间：{{time}};
+        </view>
+      </view>
+      <view class='wx-user-contentflex'>
+        <view>
+          2、
+        </view>
+        <view>
+          比赛已顺利结束，月度排行前3名可以获取奖品，请确认登记信息获取奖品;
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='wx-user-bottom'>
+    <view class='ranking'>
+      <view>
+        <button id='st' catchtap='goto' class="weui-btn mini-btn btnSize btncolop btnr" type="warn" size="mini">试题练习</button>
+      </view>
+    </view>
+    <view class='ranking'>
+      <view>
+        <button id='bs' catchtap='goto' class="weui-btn mini-btn btnSize btncoloc btnringth" type="warn" size="mini">比赛排名</button>
+        <button id='cj' catchtap='goto' class="weui-btn mini-btn btnSize btncoloc2 btnleft" type="warn" size="mini">我的成绩</button>
+      </view>
+    </view>
+    <view class='ranking'>
+      <view>
+        <button id='ly' catchtap='goto' class="weui-btn mini-btn btnSize btncoloc3 btnringth" type="warn" size="mini">领奖信息登记</button>
+        <button open-type="share" class="weui-btn mini-btn btnSize btncolor btnleft" type="warn" size="mini">邀请好友练习</button>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="container">
+  <alert id='alert' title='{{title}}' hidden='{{hidden}}' content='{{content}}' contentStr='{{contentStr}}' isArr='{{isArr}}' bind:cancelEvent="_cancelEvent" >
+  </alert>
+</view>

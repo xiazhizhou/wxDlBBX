@@ -1,0 +1,4 @@
+/* pages/index/eliteCup/eliteCupSelected/eliteCupResult/eliteRanking/eliteRanking.wxss */
+page{
+  background-color: white!important;
+}

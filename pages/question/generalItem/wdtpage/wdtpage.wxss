@@ -1,0 +1,25 @@
+/* pages/question/generalItem/wdtpage/wdtpage.wxss */
+page{
+  background-color: white;
+}
+.wx-wdt{
+  width: 100%;
+}
+.wx-wdt-auto{
+  width: 96%;
+  margin: 0 auto;
+}
+.wx-wdt-title{
+  display: flex;
+  margin: 20rpx 0 0 0;
+}
+.wx-wdt-bh{
+  width: 8rpx;
+  height: 45rpx;
+  background-color: orange;
+  margin-right: 10rpx;
+  margin-top: 5rpx;
+}
+.wx-wdt-h4{
+  color: blue;
+}

@@ -1,0 +1,351 @@
+<!--pages/knowledge/knowledge/incson/incson.wxml-->
+<view class="pages">
+  <view class="page__bd {{powerStatus?'name':''}}" id='power' catchtap='switchTab'>
+    <text>室内1</text>
+  </view>
+  <view class="page__bd {{elecStatus?'name':''}}" id='electricity' catchtap='switchTab'>
+    <text>室内2</text>
+  </view>
+  <view class="page__bd {{pressureStatus?'name':''}}" id='pressure' catchtap='switchTab'>
+    <text>室外1</text>
+  </view>
+  <view class="page__bd {{swStatus?'name':''}}" id='sw' catchtap='switchTab'>
+    <text>室外2</text>
+  </view>
+</view>
+<view class='pagebox' wx:if="{{powerStatus}}">
+  <view class="section">
+    <view class='page_text'>
+      <view class='pagex_box'>
+        <view class='page_xh xh'>
+          A1
+        </view>
+        <view class='pagetext_flex'>
+          <text>1.带电部分至接地部分之间;</text>
+          <text>2.网状和板状向上延伸距地2.3m处与遮拦上方带电部分之间;</text>
+        </view>
+      </view>
+      <view class='pagex_box'>
+        <view class='page_xh xh2'>
+          A2
+        </view>
+        <view class='pagetext_flex'>
+          <text>1.带电部分至接地部分之间;</text>
+          <text>2.网状和板状向上延伸距地2.3m处与遮拦上方带电部分之间;</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class='page_table'>
+      <view class='page_title'>
+        <text>表3.1.14-1</text>
+      </view>
+      <view class="table">
+        <view class='tr table_tr'>
+          <view class="ths"><text>额定电压(kv)</text></view>
+          <view class="ths2"><text>室内配电装置安全净距离(mm)</text></view>
+        </view>
+        <block wx:for="{{list}}" wx:key="item">
+          <view class="tr">
+            <view class="td">{{item.code}}</view>
+            <view class="td" style='background-color:{{item.color}}'>{{item.value}}</view>
+            <view class="td" style='background-color:{{item.colorh}}'>{{item.txt}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class='page_bz'>
+      <view class='page_auto'>
+        <view>
+          注1: 110J、220J指中性点直接接地电网;
+        </view>
+        <view>
+          注2: 网状遮拦至带电部分之间为板状遮拦时,其B2值可取A1+30mm;
+        </view>
+        <view>
+          注3: 通向室外的出线套管至室外通道的路面,当出线套管外侧为室外配线装置时,其至室外地面的距离不应小于表3.1.14-2中所列室外部分的C值;
+        </view>
+        <view>
+          注4: 海拔超过1000m时,A值应按图3.1.14-6进行修正。
+        </view>
+        <view>
+          注5: 本表不适用于制造厂生产的成套配电装置。
+        </view>
+      </view>
+    </view>
+    <view class='page_gb'>
+      <view>
+        <text>国标:</text> GB 50149-2010
+        <text>母线装置施工及验收规范</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='pagebox' wx:if="{{elecStatus}}">
+  <view class="section">
+    <view class='page_text'>
+      <view class='pagex_box'>
+        <view class='page_xh xh'>
+          B1
+        </view>
+        <view class='pagetext_flex'>
+          <text>1.带电部分至接地部分之间;</text>
+          <text>2.网状和板状向上延伸距地2.3m处与遮拦上方带电部分之间;</text>
+        </view>
+      </view>
+      <view class='pagex_box'>
+        <view class='xh3 pageXH'>
+          B2
+        </view>
+        <view class='pagetext_flex'>
+          <text>1.网状遮拦至带电部分之间;</text>
+        </view>
+      </view>
+      <view class='pagex_box'>
+        <view class='xh3 pageXH2'>
+          C
+        </view>
+        <view class='pagetext_flex'>
+          <text>1.无遮栏裸导体至地面之间;</text>
+        </view>
+      </view>
+      <view class='pagex_box'>
+        <view class='page_xh xh3 pageXH3'>
+          D
+        </view>
+        <view class='pagetext_flex'>
+          <text>1.平行的不同时停电检修的无遮栏带电部分之间;</text>
+        </view>
+      </view>
+      <view class='pagex_box'>
+        <view class='xh3 pageXH4'>
+          E
+        </view>
+        <view class='pagetext_flex'>
+          <text>1.通向室外的出线套管至室外通道路面;</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class='page_table'>
+      <view class='page_title'>
+        <text>表3.1.14-2</text>
+      </view>
+      <view class="table">
+        <view class='trs table_tr'>
+          <view class="thdy">
+            <text>额定电压(kv)</text>
+          </view>
+          <view class="thjl">
+            <text>室内配电装置安全净距离(mm)</text>
+          </view>
+        </view>
+        <block wx:for="{{list2}}" wx:key="item">
+          <view class="tr">
+            <view class="td">{{item.code}}</view>
+            <view class="td">{{item.value}}</view>
+            <view class="td">{{item.txt}}</view>
+            <view class="td">{{item.kv}}</view>
+            <view class="td">{{item.kv2}}</view>
+            <view class="td">{{item.kv3}}</view>
+          </view>
+        </block>
+        <block>
+          <view class="tr">
+            <view class="td">符号</view>
+            <view class="td" style='background-color:#0099ff;'>B1</view>
+            <view class="td" style='background-color:#fb667a;'>B2</view>
+            <view class="td" style='background-color:#1bc266;'>C</view>
+            <view class="td" style='background-color:#f48221;'>D</view>
+            <view class="td" style='background-color:#0e8eab;'>E</view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class='page_bz'>
+      <view class='page_auto'>
+        <view>
+          注1: 表中未列电压等级按高一档电压等级安全距离;
+        </view>
+        <view>
+          注2: 13.8KV执行10KV的距离;
+        </view>
+        <view>
+          注3: 750KV数据按海拔2000M校正,其他等级数据按海拔1000M校正;
+        </view>
+      </view>
+    </view>
+    <view class='page_gb'>
+      <view>
+        <text>国标:</text> GB 50149-2010
+        <text>母线装置施工及验收规范</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='pagebox' wx:if="{{pressureStatus}}">
+  <view class="section">
+    <view class='page_text'>
+      <view class='pagex_box'>
+        <view class='page_xh xh'>
+          A1
+        </view>
+        <view class='pagetext_flex'>
+          <text>1.带电部分至接地部分之间;</text>
+          <text>2.网状和板状向上延伸距地2.3m处与遮拦上方带电部分之间;</text>
+        </view>
+      </view>
+      <view class='pagex_box'>
+        <view class='page_xh xh2'>
+          A2
+        </view>
+        <view class='pagetext_flex'>
+          <text>1.带电部分至接地部分之间;</text>
+          <text>2.网状和板状向上延伸距地2.3m处与遮拦上方带电部分之间;</text>
+        </view>
+      </view>
+      <view class='pagex_box'>
+        <view class='page_xh pageXH2 pageB2'>
+          B2
+        </view>
+        <view class='pagetext_flex'>
+          <text>1.设备运输时,其外廊至无遮拦带电部分之间;</text>
+          <text>2.交叉的不同时停电检修的无遮拦带电部分之间;</text>
+          <text>3.栅栏遮拦至绝缘体和带电部分之间;</text>
+          <text>4.带电作业时的带电部分至接地部分之间;</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class='page_table'>
+      <view class='page_title'>
+        <text>表1 设备不停电式安全距离</text>
+      </view>
+      <view class="table">
+        <view class='trs table_tr'>
+          <view class="thdy thdy2">
+            <text>额定电压(kv)</text>
+          </view>
+          <view class="thjl thjl2">
+            <text>室内配电装置安全净距离(mm)</text>
+          </view>
+        </view>
+        <block wx:for="{{list3}}" wx:key="item">
+          <view class="tr">
+            <view class="td">{{item.code}}</view>
+            <view class="td" style='background-color:{{item.color}}'>{{item.value}}</view>
+            <view class="td" style='background-color:{{item.colorh}}'>{{item.txt}}</view>
+            <view class="td" style='background-color:{{item.colorh}}'>{{item.kv}}</view>
+          </view>
+        </block>
+        <block>
+          <view class="tr">
+            <view class="td">符号</view>
+            <view class="td" style='background-color:#0099ff;'>A1</view>
+            <view class="td" style='background-color:#fb667a;'>A2</view>
+            <view class="td" style='background-color:#1bc266;'>B1</view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class='page_gb'>
+      <view>
+        <text>国标:</text> GB 50149-2010
+        <text>母线装置施工及验收规范</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='pagebox' wx:if="{{swStatus}}">
+  <view class="section">
+    <view class='page_text'>
+      <view class='pagex_box'>
+        <view class='xh page_xh'>
+          B2
+        </view>
+        <view class='pagetext_flex'>
+          <text>1.网状遮拦至带电部分之间;</text>
+        </view>
+      </view>
+      <view class='pagex_box'>
+        <view class='xh2 page_xh'>
+          C
+        </view>
+        <view class='pagetext_flex'>
+          <text>1.无遮栏裸导体至地面之间;</text>
+          <text>2.无遮栏裸导体至建筑物、构筑物顶部之间;</text>
+        </view>
+      </view>
+      <view class='pagex_box'>
+        <view class='xh2 page_xh'>
+          D
+        </view>
+        <view class='pagetext_flex'>
+          <text>1.平行的不同时停电检修的无遮栏带电部分之间;</text>
+          <text>2.带电部分与建筑物、构筑物的边沿部分之间;</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class='page_table'>
+      <view class='page_title'>
+        <text>表2 设备不停电式安全距离</text>
+      </view>
+      <view class="table">
+        <view class='trs table_tr'>
+          <view class="thdy thdy2">
+            <text>额定电压(kv)</text>
+          </view>
+          <view class="thjl thjl2">
+            <text>室内配电装置安全净距离(mm)</text>
+          </view>
+        </view>
+        <block wx:for="{{list4}}" wx:key="item">
+          <view class="tr">
+            <view class="td tds4">{{item.code}}</view>
+            <view class="td tds4">{{item.value}}</view>
+            <view class="td tds4">{{item.txt}}</view>
+            <view class="td tds4">{{item.kv}}</view>
+          </view>
+        </block>
+        <block>
+          <view class="tr">
+            <view class="td tds4">符号</view>
+            <view class="td tds4" style='background-color:#fb667a;'>B2</view>
+            <view class="td tds4" style='background-color:#1bc266;'>C</view>
+            <view class="td tds4" style='background-color:#f48221;'>D</view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class='page_bz'>
+      <view class='page_auto'>
+        <view>
+          注1: 110J、220J、330J、500J、750J指中性点直接接地电网;
+        </view>
+        <view>
+          注2: 栅状遮拦至绝缘体和带电部分之间,对于220KV及以上电压,可按绝缘体电位的实际分布,采用相应的B值检验,此时可允许栅状遮拦与绝缘体的距离小于H1值。当无给定的分布电位时,可按线性分布计算。500KV及以上相间通道的安全净距,可按绝缘体电位的实际分布检验;当无给定的分布电位时,可按线性分布计算;
+        </view>
+        <view>
+          注3: 带电作业时的带电部分至接地部分之间(110J~500J),带电作业时,不同相或交叉的不同回路带电部分之间,其B1值可取A2+750mm;
+        </view>
+        <view>
+          注4: 500KV的A1值,双分裂软导线至接地部分之间可取3500mm;
+        </view>
+      </view>
+    </view>
+    <view class='page_gb'>
+      <view>
+        <text>国标:</text> GB 50149-2010
+        <text>母线装置施工及验收规范</text>
+      </view>
+    </view>
+  </view>
+</view>

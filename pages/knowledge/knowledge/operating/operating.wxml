@@ -1,0 +1,6 @@
+<!--pages/knowledge/knowledge/operating/operating.wxml-->
+<view class='pagebox' style='height:{{imgHeigth}}px'>
+  <view class='page'>
+    <image data-src="{{imgShop}}" src='{{imgShop}}' mode="scaleToFill" bindload="imageLoad"></image>
+  </view>
+</view>

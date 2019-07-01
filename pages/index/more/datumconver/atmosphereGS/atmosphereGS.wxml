@@ -1,0 +1,17 @@
+<!--pages/index/more/datumconver/atmosphereGS/atmosphereGS.wxml-->
+<view class='viewBox'>
+  <text>收到基</text>
+  <image src='../../../../../assets/images/SDJ.png' mode="scaleToFill"></image>
+</view>
+<view class='viewBox'>
+  <text>空气干燥基</text>
+  <image src='../../../../../assets/images/KQGZJ.png' mode="scaleToFill"></image>
+</view>
+<view class='viewBox'>
+  <text>干燥基</text>
+  <image src='../../../../../assets/images/GZJ.png' mode="scaleToFill"></image>
+</view>
+<view class='viewBox'>
+  <text>干燥无灰基</text>
+  <image src='../../../../../assets/images/GZWHJ.png' mode="scaleToFill"></image>
+</view>

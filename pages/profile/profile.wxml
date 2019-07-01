@@ -1,0 +1,64 @@
+<view class='authority'>
+  <view class='authority_header'>
+    <view class='authority_hleft'>
+      <view class='authority_box'>
+        <view class='authority_tx'>
+          <image src="{{item.ImageUrl}}" mode="scaleToFill"></image>
+        </view>
+      </view>
+    </view>
+    <view class='authority_hright'>
+      <view>
+        <view class='authority_fhk'>
+          <text>电力百宝箱</text>
+        </view>
+        <view class='authority_ls'>
+          <text>用户身份：</text>
+          <text>{{item.Name}}</text>
+        </view>
+      </view>
+      <view class='authority_dj'>
+        <text>等级：</text>
+        <text class='fontColor'>{{item.Level}}V</text>
+      </view>
+    </view>
+  </view>
+  <view class='authority-list'>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">我的复活卡</view>
+        <view class="weui-cell__ft">{{item.ReviveCard}}张</view>
+      </view>
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">当前积分</view>
+        <view class="weui-cell__ft">{{item.Score}}分</view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__bd">历史最高分</view>
+        <view class="weui-cell__ft">{{max}}分</view>
+      </view>
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+      <navigator url="/pages/profile/collectMy/collectMy" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">我的收藏</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+      <navigator url="/pages/profile/userinfoRegisters/userinfoRegisters" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">我的单位</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+      <navigator url="/pages/profile/updateLog/updateLog" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">更新日志</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+      <navigator url="/pages/profile/about/about" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">关于我们</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+    </view>
+  </view>
+</view>

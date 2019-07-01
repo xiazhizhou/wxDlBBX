@@ -1,0 +1,94 @@
+<!--pages/question/generalItem/gatherItem/gatherList/gatherList.wxml-->
+<view class='authoritys'>
+  <view class='decide-header'>
+    <view class='decide-header-left'>
+      <view class='decide-header-total'>
+        {{item.length}}题
+      </view>
+    </view>
+    <view class='decide-header-center' wx:if="{{!switchAnswer}}">
+      <!-- <view class='decide-header-cgs'>
+        <view>
+          <text>正确：</text>
+          <text>{{correct}}题</text>
+        </view>
+        <view>
+          <text>错误：</text>
+          <text>{{error}}题</text>
+        </view>
+      </view> -->
+    </view>
+    <view class='decide-header-center' wx:if="{{switchAnswer}}">
+      <view class='decide-header-cgs'>
+        <view catchtap='saveTraingExam'>
+          <text>答案：</text>
+          <text>{{allRadio[(item[index].ShowRightAnswer[0]-1)]}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='decide-header-right'>
+      <view class='decide-header-totaljs'>
+        {{index+1}}/{{item.length}}
+      </view>
+    </view>
+  </view>
+  <view class='decide-dati'>
+    <view>
+      {{index+1}}、{{item[index].QuestionName}}
+    </view>
+    <view class='decide-datiauto'>
+      <view wx:for="{{item[index].ShowAllAnswers}}" wx:key="item" wx:for-index="bindex" data-id="{{bindex}}" data-viewpoint='{{bindex}}' catchtap='saveTraingExam'>
+        <button class="weui-btn mini-btn btnSize btncolop {{bindex==id?showRightAnswer==items?'green':'red':'blue'}}" type="warn" size="mini">
+          <view>{{allRadio[bindex]}}.{{item}}</view>
+          <view></view>
+        </button>
+      </view>
+    </view>
+  </view>
+  <view class='decide-daan'>
+    <view class="body-view">
+      <switch bindchange="switchChange" />
+    </view>
+    <view>
+      <text>显示答案</text>
+    </view>
+  </view>
+  <view class='decide-footer'>
+    <view class='decide-footerauto'>
+      <view catchtap='previous'>
+        上一题
+      </view>
+      <view class='getShareInfo' open-type="share">
+        
+      </view>
+      <view class='collectionfont'>
+        
+      </view>
+      <view catchtap='getExam' style='background-color:white;'>
+        
+      </view>
+      <view catchtap='next'>
+        下一题
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 图库 -->
+<view class='wx-mask' wx:if="{{hidder}}"></view>
+<view class='wx-tk' wx:if="{{hidder}}">  
+  <view class='wx-header'>
+    <text>选择题号</text>
+    <view class='wx-cuwu' catchtap='getExamHidd'>
+      <text class='BDTfont cuwu'></text>
+    </view>
+  </view>
+  <view class='wx-tm'>
+    <view class="wx-tm-btn" wx:for="{{item}}" wx:key="item" wx:for-index="bindex" catchtap='clickExem' data-id="{{bindex}}">
+      <view class="wx-tm-item {{'class'+item.answerState}}">{{bindex+1}}</view>
+    </view>
+  </view>
+</view>
+
+<reload id='reload' buttonText='重 试' message='请求失败' isShow="{{is_loadmore}}" bind:reload="_reload">
+</reload>
+

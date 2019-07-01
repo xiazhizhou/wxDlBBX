@@ -1,0 +1,47 @@
+<!--pages/question/generalItem/competition/competitionDecide/competitionDecide.wxml-->
+<view class='authoritys'>
+  <view class='decide-header'>
+    <view class='decide-header-left'>
+      <view class='decide-header-total'>
+        分数:{{item.CurrentScore}}分
+      </view>
+    </view>
+    <view class='decide-header-center'>
+      <view class='decide-header-cgs'>
+        <view style='text-align:center;'>
+          <text>倒计时</text>
+        </view>
+        <view>
+          <text>{{hhh}}:{{mmm}}:{{sss}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='decide-header-right'>
+      <view class='decide-header-totaljs'>
+        {{item.RemainingLife}}/3
+      </view>
+    </view>
+  </view>
+  <view class='decide-dati'>
+    <view>
+      {{index}}、{{item.QuestionName}}
+    </view>
+    <view class='decide-datiauto'>
+      <view wx:for="{{item.ShowAllAnswers}}" wx:key="item" wx:for-index="bindex" data-id="{{bindex}}" catchtap='saveClassExam'>
+        <button class="weui-btn mini-btn btnSize btncolop {{bindex==id?switchStatus?'green':'red':'blue'}}" type="warn" size="mini">
+          <view>{{allRadio[bindex]}}.{{item}}</view>
+          <view></view>
+        </button>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{showAnStatus}}" style='text-align:center;'>正确答案：<text>{{allRadios[showRightAnswer]}}</text></view>
+  <!-- <view class='decide-footer'>
+    <view class='decide-footerautos'> 
+      <button class='getShareInfo' style='color: #0099ff;border-radius:0;background-color:white;' open-type="share">
+        <text class='BDTfont bzfx'></text>
+      </button>
+    </view>
+  </view> -->
+</view>
+

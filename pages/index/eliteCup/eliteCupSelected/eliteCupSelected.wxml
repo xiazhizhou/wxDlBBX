@@ -1,0 +1,58 @@
+<view class='authoritys'>
+  <view class='decide-header'>
+    <view class='decide-header-left'>
+      <view class='decide-header-total'>
+        {{allExamQuestion[index].QuestionType=='RadioChoice'?'单选题':allExamQuestion[index].QuestionType=='MultipleChoice'?'多选题':'判断题'}}
+      </view>
+    </view>
+    <view class='decide-header-center'>
+      <view class='decide-header-cgs'>
+        <view style='text-align:center;'>
+          <text>倒计时</text>
+        </view>
+        <view>
+          <text>{{hhh}}:{{mmm}}:{{sss}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='decide-header-right'>
+      <view class='decide-header-totaljs'>
+        {{index+1}}/{{allExamQuestion.length}}
+      </view>
+    </view>
+  </view>
+  <view class='decide-dati'>
+    <view>
+    <!-- ({{allExamQuestion[index].Score}}分) -->
+      {{index+1}}、{{allExamQuestion[index].QuestionName}}
+    </view>
+    <view class='decide-datiauto'>
+      <view wx:for="{{allExamQuestion[index].ShowAllAnswers}}" wx:key="item" wx:for-index="bindex" data-id="{{bindex}}" catchtap='saveClassExam'>
+        <button class="weui-btn mini-btn btnSize btncolop {{bindex == id?'green':'blue'}}" type="warn" size="mini">
+          <view>{{allRadio[bindex]}}.{{item}}</view>
+          <view></view>
+        </button>
+      </view>
+    </view>
+  </view>
+  <!-- <view class='decide-footer'>
+    <view class='decide-footerauto'>
+      <view></view>
+      <view catchtap='goback'>
+        退出
+      </view>
+      <view class='collectionfont'>
+        <text class='BDTfont collection'></text>
+      </view>
+      <view catchtap='isHand'>
+        交卷
+      </view>
+      <view></view>
+    </view>
+  </view> -->
+</view>
+<!-- <view class="container">
+  <dialog id='dialog' title='提示' content='{{content}}' cancelText='取消' confirmText='确定' bind:confirmEvent="_confirmEvent" bind:cancelEvent="_cancelEvent" >
+  </dialog>
+</view> -->
+

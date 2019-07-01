@@ -1,0 +1,81 @@
+<!--pages/index/more/smokedust/smokedust.wxml-->
+<view class='page'>
+  <view class="section">
+    <view class="section__title">输入：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <text>锅炉耗煤量B：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='glValue' value='{{glValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>kg</view>
+        </view>
+      </view>
+      <view class="flex-item bc_green">
+        <text>煤的灰分A：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='mValue' value='{{mValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>%</view>
+        </view>
+      </view>
+      <view class="flex-item bc_green">
+        <text>烟尘占灰分量dfh：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='ycValue' value='{{ycValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>%</view>
+        </view>
+      </view>
+      <view class="flex-item bc_green">
+        <text>可燃物含量Cfh：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='rValue' value='{{rValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>%</view>
+        </view>
+      </view>
+      <view class="flex-item bc_green">
+        <text>除尘效率η：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='clValue' value='{{clValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>%</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section__title">输出：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <text>烟尘排放量Gyc：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' value='{{list[0]}}' type='digit' disabled='disabled' />
+          <view class='text'>kg</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section section-mt">
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <button class='flex-btn' catchtap='compute'>
+          一键计算
+        </button>
+      </view>
+      <view class="flex-item bc_green">
+        <button class='flex-btn' catchtap='clear'>
+          一键清除
+        </button>
+      </view>
+    </view>
+  </view>
+  <view class='img imgBox'>
+    <view class="section__title">计算公式：</view>
+    <view class='img-box'>
+      <image src='../../../../assets/images/23.yc.png'></image>
+    </view>
+    <view class="section__title cktitle">
+      <text class='cktitleBg' catchtap='advice'>参考说明</text>
+    </view>
+  </view>
+</view>
+
+
+

@@ -1,0 +1,9 @@
+<!--pages/profile/updateLog/updateLog.wxml-->
+<view class='updatelog'>
+ <view class='updatelog-auto'>
+    <view class='updatelog-content'>
+      <view>版本v1.0.8</view>
+      <view wx:for="{{list}}" wx:key="{{item}}" wx:for-index="bindex">{{bindex+1}}、{{item}}</view>
+    </view>
+ </view>
+</view>

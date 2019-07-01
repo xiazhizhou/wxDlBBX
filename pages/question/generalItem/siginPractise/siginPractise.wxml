@@ -1,0 +1,73 @@
+<!--pages/question/generalItem/siginPractise/siginPractise.wxml-->
+<view class='authoritys'>
+  <view class='decide-header'>
+    <view class='decide-header-left'>
+      <view class='decide-header-total'>
+        {{extotal}}题
+      </view>
+    </view>
+    <view class='decide-header-center' wx:if="{{!switchAnswer}}">
+    </view>
+    <view class='decide-header-center' wx:if="{{switchAnswer}}">
+      <view class='decide-header-cgs'>
+        <view>
+          <text>正确答案：</text>
+          <text>{{allRadio[(itemExam.ShowRightAnswer[0]-1)]}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='decide-header-right'>
+      <view class='decide-header-totaljs'>
+        {{pageIndex}}/{{extotal}}
+      </view>
+    </view>
+  </view>
+  <view class='decide-dati'>
+    <view>
+      {{pageIndex}}、{{itemExam.QuestionName}}
+    </view>
+    <view class='decide-datiauto'>
+      <view wx:for="{{itemExam.ShowAllAnswers}}" wx:key="item" wx:for-index="bindex" data-id="{{bindex}}" data-viewpoint='{{bindex}}' catchtap='saveTraingExam'>
+        <button class="weui-btn mini-btn btnSize btncolop {{bindex==id?showRightAnswer==items?'green':'red':'blue'}}" type="warn" size="mini">
+          <view>{{allRadio[bindex]}}.{{item}}</view>
+        </button>
+      </view>
+    </view>
+  </view>
+  <view class='decide-footer'>
+    <view class='decide-footerauto'>
+      <view>
+        
+      </view>
+      <button class='getShareInfo' open-type="share">
+        求助
+      </button>
+      <view class='collectionfont'>
+       
+      </view>
+      <view catchtap='getExam'>
+        开始答题
+      </view>
+      <view>
+        
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='wx-mask' wx:if="{{hidder}}"></view>
+<view class='wx-tk' wx:if="{{hidder}}">  
+  <view class='wx-header'>
+    <text>选择题号</text>
+    <view class='wx-cuwu' catchtap='getExamHidd'>
+      <text class='BDTfont cuwu'></text>
+    </view>
+  </view>
+  <view class='wx-tm'>
+    <view class="wx-tm-btn" wx:for="{{examList}}" wx:key="item" wx:for-index="bindex" catchtap='clickExem' data-id="{{bindex+1}}">
+      <view class="wx-tm-item class{{item.answerState}}">{{bindex+1}}</view>
+    </view>
+  </view>
+</view>
+
+

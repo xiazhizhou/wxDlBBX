@@ -1,0 +1,45 @@
+<!--pages/index/eliteCup/eliteCupSelected/eliteCupResult/eliteRanking/eliteRanking.wxml-->
+<view class='wx-content'>
+  <view class='wx-content-head'>
+    <view class='wx-title'>参赛人员</view>
+    <view class='wx-title'>
+      <picker class="weui-btn" mode="date" fields="month" value="{{date}}" bindchange="bindDateChange">
+        <view type="default">{{date}}</view>
+      </picker>
+    </view>
+    <view class='wx-title'>个人得分</view>
+  </view>
+   <view class='wx-content-item' wx:for="{{list}}" wx:key="item" wx:for-index="bindex">
+    <view class='wx-size wx-open'>
+      <view>
+        <text>{{bindex+1}}</text>
+      </view>
+      <view>
+        <image src="{{item.ImageUrl}}" mode="scaleToFill"></image>
+      </view>
+    </view>
+    <view class='wx-size wx-ph'>
+      <view>{{item.Name}}</view>
+      <view>{{item.Organization==null||item.Organization==""?"":item.Organization}}</view>
+    </view>
+    <view class='wx-size wx-fs'>
+      <view class='wx-fsnth'></view>
+      <view>
+        <view style='display:flex;justify-content:center'>{{item.Score}}</view>
+        <view class='wx-fsnth2'>
+          <text>{{item.UseTime}}秒</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{list.length == 0}}" style='text-align:center'>
+    <text>暂无数据</text>
+  </view>
+</view>
+
+<reload id='reload' 
+  buttonText='重 试'
+  message='请求失败'
+  isShow="{{is_loadmore}}"
+  bind:reload="_reload">
+</reload>

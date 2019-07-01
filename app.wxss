@@ -1,0 +1,811 @@
+/**app.wxss**/
+@import 'style/weui.wxss';
+@import 'style/iconfont.wxss';
+
+page {
+  background-color: #f0f0f0; 
+  font-size: 30rpx;
+}
+.BDTfont {
+  font-family:"iconfont" !important;
+  font-size:32rpx;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.yqhy:before{
+  content: "\e750";
+}
+.zk:before{
+  content: "\e615";
+}
+.qd:before{
+  content: "\e752";
+}
+.phb:before{
+  content: "\e756"; 
+}
+.jsyy:before{
+  content: "\e751"; 
+}
+.zyyy:before{
+  content: "\e757"; 
+}
+.dz:before{
+  content: "\e73f"; 
+}
+.hnfdlc:before{
+  content: "\e770"; 
+}
+.liuy:before{
+  content: "\e74e"; 
+}
+.tongz:before{
+  content: "\e60d"; 
+}
+.bzfx:before{
+  content: "\e73c"; 
+}
+.xzs:before{
+  content: "\e71f";
+}
+.szqb:before{
+  content: "\e712";
+}
+.qjzxl:before{
+  content: "\e71a";
+}
+.cuwu:before{
+  content: "\e73e"
+}
+.icon-more:before{
+  content: "\e713";
+}
+.qiao:before{
+  content: "\e74b"
+}
+.glkqxs:before{
+  content: "\e718";
+}
+.pwl:before{
+  content: "\e716";
+}
+.lqjzkd:before{
+  content: "\e714";
+}
+.fdsh:before{
+  content: "\e719";
+}
+.icon-gy:before{
+  content: "\e629";
+}
+.lfl:before{
+  content: "\e718";
+}
+.sca:before{
+  content: "\e738";
+}
+.btjzzh:before{
+  content: "\e71e";
+}
+.rlso:before{
+  content: "\e71d";
+}
+.rlNOX:before{
+  content: "\e71c";
+}
+.rlycpf:before{
+  content: "\e71b";
+}
+.zl:before{
+  content: "\e6eb";
+}
+.jldx:before{
+  content: "\e6ec";
+}
+.jlsx:before{
+  content: "\e6ed";
+}
+.bsq:before{
+  content: "\e6ab";
+}
+.cyllq:before{
+  content: "\e6aa";
+}
+.fdbcx:before{
+  content: "\e6a9";
+}
+.sh:before{
+  content: "\e697";
+}
+.jh:before{
+  content: "\e696";
+}
+.jymdhs:before{
+  content: "\e698";
+}
+.hlfdlc:before{
+  content: "\e724";
+}
+.lxtfj:before{
+  content: "\e726";
+}
+.zltfj:before{
+  content: "\e72d";
+}
+.lxb:before{
+  content: "\e728";
+}
+.sxhzkb:before{
+  content: "\e72b";
+}
+.yyxt:before{
+  content: "\e72a";
+}
+.ksxz:before{
+  content: "\e727";
+}
+.zqxszl:before{
+  content: "\e72e";
+}
+.df:before{
+  content: "\e723";
+}
+.qf:before{
+  content: "\e729";
+}
+.xxf:before{
+  content: "\e72c";
+}
+.kbf:before{
+  content: "\e736";
+}
+.stf:before{
+  content: "\e727";
+}
+.jzf:before{
+  content: "\e72f";
+}
+.gmtjf:before{
+  content: "\e732";
+}
+.llcl:before{
+  content: "\e725";
+}
+.zzllj:before{
+  content: "\e735";
+}
+.dcllj:before{
+  content: "\e733";
+}
+.wlllj:before{
+  content: "\e734";
+}
+.xiaozz:before{
+  content: "\e75a";
+}
+.dqaqzs:before{
+  content: "\e6ee";
+}
+.dlhyzs:before{
+  content: "\e6f0";
+}
+.mxzzsg:before{
+  content: "\e6ef";
+}
+.hcxs:before{
+  content: "\e607";
+}
+.gl:before{
+  content: "\e73a";
+}
+.qlj:before{
+  content: "\e602";
+}
+.fdj:before{
+  content: "\e632";
+}
+.nqq:before{
+  content: "\e614";
+}
+.cyq:before{
+  content: "\e604";
+}
+.samadzb:before{
+  content: "\e6e8";
+}
+.gylctf:before{
+  content: "\e614";
+}
+.dzyjtf:before{
+  content: "\e6e9";
+}
+.icon-gouwuche:before {
+  content: "\e6ea"; 
+}
+.jg:before{
+  content: "\e600"; 
+}
+.qhq:before{
+  content: "\e739"; 
+}
+.jl:before{
+  content: "\e737"; 
+}
+.remove:before{
+  content: "\e738";
+}
+.left:before{
+  content: "\e653"; 
+}
+.right:before{
+  content: "\e638"; 
+}
+.collection:before{
+  content: "\e745"; 
+}
+.jb:before{
+  content: "\e74d"; 
+  color: #f8c569;
+  font-size: 40rpx;
+}
+.slfdlc:before{
+  content: "\e76b"; 
+}
+.ljfdlc:before{
+  content: "\e76c"; 
+}
+.grfdlc:before{
+  content: "\e76f"; 
+}
+.xhlhcfdlc:before{
+  content: "\e76e"; 
+}
+.tlnqf:before{
+  content: "\e775"; 
+}
+.ztdzf:before{
+  content: "\e774"; 
+}
+.ztszf:before{
+  content: "\e773"; 
+}
+.jxf:before{
+  content: "\e772"; 
+}
+.qdbmtjf:before{
+  content: "\e776"; 
+}
+
+.djlxb:before{
+  content: "\e764"; 
+}
+.lgb:before{
+  content: "\e76a"; 
+}
+.sdwfb:before{
+  content: "\e767"; 
+}
+.xwb:before{
+  content: "\e768"; 
+}
+.zqpsb:before{
+  content: "\e765"; 
+}
+.zlgdb:before{
+  content: "\e766"; 
+}
+.lcgfj:before{
+  content: "\e763"; 
+}
+.lsylllj:before{
+  content: "\e786"; 
+}
+
+.tlyl:before{
+  content: "\e779"; 
+}
+.txyl:before{
+  content: "\e77b"; 
+}
+.dcc:before{
+  content: "\e77a"; 
+}
+.dgsdcc:before{
+  content: "\e77d"; 
+}
+.lsxfsmccq:before{
+  content: "\e778"; 
+}
+.wqlxsq:before{
+  content: "\e777"; 
+}
+
+.cysywja:before{
+  content: "\e790"; 
+}
+.cysywjb:before{
+  content: "\e792"; 
+}
+.cysywjc:before{
+  content: "\e791"; 
+}
+.csbywj:before{
+  content: "\e78e"; 
+}
+.drsywj:before{
+  content: "\e78f"; 
+}
+
+.thgsylyb:before{
+  content: "\e78c"; 
+}
+.djdsylyb:before{
+  content: "\e78a"; 
+}
+.drsylcgq:before{
+  content: "\e78d"; 
+}
+.mhsylcgq:before{
+  content: "\e789"; 
+}
+.ylswdj:before{
+  content: "\e78b"; 
+}
+.ybsylcgq:before{
+  content: "\e788"; 
+}
+
+.cjkzyl:before{
+  content: "\e785"; 
+}
+.dffckz:before{
+  content: "\e782"; 
+}
+.glkz:before{
+  content: "\e781"; 
+}
+.jrlcj:before{
+  content: "\e784"; 
+}
+.jrlwdcl:before{
+  content: "\e780"; 
+}
+.jdjykz:before{
+  content: "\e783"; 
+}
+.jykz:before{
+  content: "\e640"; 
+}
+.wlcs:before{
+  content: "\e77e"; 
+}
+.ywkz:before{
+  content: "\e77f"; 
+}
+
+/* 专业计算 */
+.bhyl:before{
+  content: "\e795"; 
+}
+.bhwd:before{
+  content: "\e794"; 
+}
+.grylwd:before{
+  content: "\e79f"; 
+}
+.grylhz:before{
+  content: "\e799"; 
+}
+.grhzsz:before{
+  content: "\e798"; 
+}
+.grylsz:before{
+  content: "\e7a2"; 
+}
+.grwdgd:before{
+  content: "\e797"; 
+}
+.grylgd:before{
+  content: "\e79a"; 
+}
+.gld:before{
+  content: "\e796"; 
+}
+.dwhs:before{
+  content: "\e79b"; 
+}
+.cydl:before{
+  content: "\e79e"; 
+}
+.rdofdb:before{
+  content: "\e79d"; 
+}
+.dzfdb:before{
+  content: "\e793"; 
+}
+.bsqdl:before{
+  content: "\e7a1"; 
+}
+.lljcy:before{
+  content: "\e7a0"; 
+}
+.glzya:before{
+  content: "\e75e"; 
+}
+.qjzya:before{
+  content: "\e760"; 
+}
+.dqzya:before{
+  content: "\e762"; 
+}
+.rkzya:before{
+  content: "\e75f"; 
+}
+.hxzya:before{
+  content: "\e75d"; 
+}
+.agzya:before{
+  content: "\e761"; 
+}
+.shezhi:before{
+  content: "\e62d"; 
+}
+/* 计算页面的统一样式 */
+.page{
+  width: 90%;
+  margin: 0 auto;
+}
+.page .section__title{
+  color: #38a4d7;
+  margin-top:30rpx; 
+}
+.page .flex-item{
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  margin: 30rpx 20rpx;
+}
+.page .flex-item text{
+  width: 200rpx;
+  font-size: 30rpx;
+}
+.page .flex-item .flexInputbox{
+  display: flex;
+  border: 2rpx solid #656565;
+  border-radius: 20rpx;
+  padding: 5rpx 0;
+}
+.page .flex-item .flex-input{
+  font-size: 30rpx;
+  padding-left: 10rpx;
+}
+.page .flex-item .flexInputbox .text{
+  border-left:2rpx solid #c1c1c1;
+  width: 100rpx;
+  font-size: 30rpx;
+  text-align: center;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-top:5rpx; 
+}
+.page .flex-item .flex-btn{
+  width: 100%;
+  height:80rpx;
+  border-radius: 20rpx;
+  color: white;
+  background: linear-gradient(0deg, #187ac5, #38a4d7 60%,white);
+  line-height: 80rpx;
+  font-size: 30rpx;
+}
+.section-mt{
+  margin-top: 60rpx;
+}
+input:-webkit-input-placeholder {
+  color: #ffffff;
+  font-size: 30rpx;
+}
+.page .img{
+  width: 98%;
+  margin: 0 auto;
+}
+.page .img .section__title{
+  margin: 60rpx 0;
+}
+.page .img .img-box{
+  width: 82%;
+  margin: 0 auto;
+  height: 100rpx;
+}
+.page .img .img-box image{
+  width: 100%;
+  height: 100%;
+}
+.page .img .img-text{
+  display: flex;
+  flex-direction: column;
+}
+
+.pages .adviceTxt{
+  background-color: #187ac5;
+  color: white;
+}
+.pages .adviceTxt .adviceauto{
+  width: 90%;
+  margin: 0 auto;
+  padding: 20rpx 0;
+}
+.pages .adviceTxts view{
+  text-indent: 2em;
+}
+.pages .page-gs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 280rpx;
+  background-color: #f5f4f4;
+}
+.pages .page-gs text{
+  color: #248b9c;
+  font-size: 34rpx;
+}
+.pages .page-boxs{
+  width: 82%;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  height: 280rpx;
+}
+.pages .page-boxs image{
+  width: 100%;
+  height: 100rpx;
+}
+.imgBox .cktitle{
+  text-align: right;
+  font-size: 28rpx;
+}
+.imgBox .cktitle .cktitleBg{
+  color: white;
+  border-radius: 10rpx;
+}
+.cktitleBg{
+  background:linear-gradient(0deg, #187ac5, #38a4d7 60%,white);
+}
+
+/* 题库公共样式 */
+.authoritys{
+  overflow: hidden;
+  color: white;
+  width: 100%;
+}
+.authoritys .decide-header{
+  height: 120rpx;
+  background-color:#0099ff; 
+  display: flex;
+  border-bottom: 4rpx solid black;
+  padding-bottom: 20rpx;
+  width: 100%;
+}
+.decide-header-left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#efad63;
+  border-radius: 0 100rpx 100rpx 0; 
+}
+.decide-header-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.decide-header-right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#efad63;
+  border-radius: 100rpx 0 0 100rpx; 
+}
+.decide-header-left,.decide-header-right{
+  width: 28%;
+  font-size: 16px;
+}
+.decide-header-center{
+  width: 48%;
+}
+.decide-dati{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40rpx;
+}
+.decide-dati .decide-datiauto{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 100rpx;
+}
+.decide-dati .decide-datiauto view{
+  width: 100%;
+}
+.decide-dati .decide-datiauto view button{
+  width: 100%;
+  margin-bottom: 60rpx;
+  font-size: 16px;
+  background-color: #0099ff;
+  padding: 10rpx 0;
+}
+.decide-footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 80rpx;
+}
+.decide-footer .decide-footerauto view{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.decide-footerauto{
+  display: flex;
+  width: 98%;
+  margin: 0 auto;
+  height: 100%;
+  background-color: white;
+  color: black;
+  border-radius: 20rpx 20rpx 0 0rpx; 
+}
+.decide-footerautos{
+  display: flex;
+  width: 98%;
+  margin: 0 auto;
+  height: 100%;
+  background-color: white;
+  color: black;
+  border-radius: 20rpx 20rpx 0 0rpx; 
+}
+.decide-footerauto view:nth-child(2){
+  color: white;
+  background-color: #24aa47;
+}
+.decide-footerauto view:nth-child(4){
+  color: white;
+  background-color: #f03129;
+}
+.decide-footerautos view{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.decide-footerautos view:nth-child(1){
+  width: 50%;
+  color: #0099ff;
+}
+.decide-footerautos view:nth-child(2){
+  width: 50%;
+  color: #efad63;
+}
+.decide-footerautos view text{
+  font-size: 36rpx;
+}
+
+/* 排行榜公共样式 */
+.wx-content{
+  width: 100%;
+}
+.wx-content-head{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  border-bottom: 2rpx solid #cccccc;
+  background-color: #dedede;
+}
+.wx-content-head .wx-title{
+  width: 33.3333333%;
+  display: flex;
+  justify-content: center;
+}
+.wx-content .wx-content-item{
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 150rpx;
+  margin: 0 auto;
+  border-bottom: 2rpx solid #cccccc;
+}
+.wx-content-item .wx-size{
+  width: 33.3333333%;
+}
+.wx-content-item .wx-open{
+  height: 120rpx;
+  display: flex;
+}
+.wx-open view:nth-child(1){
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wx-open view:nth-child(2){
+  width: 65%; 
+}
+.wx-open view:nth-child(2) image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.wx-ph view{
+  text-align: center;
+}
+.wx-fs{
+  display: flex;
+  justify-content: center;
+}
+.wx-fs view:nth-child(1){
+  display: flex;
+  align-items: center;
+}
+.wx-fs .wx-fsnth{
+  margin-right: 20rpx;
+}
+.wx-fs view:nth-child(2){
+  color: red;
+}
+.wx-fs .wx-fsnth2{
+  text-align: center;
+}
+
+/* 错题和收藏集 */
+.wx-ctj{
+  width: 100%;
+  padding-bottom: 40rpx;
+}
+.wx-item{
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+.wx-item .wx-list{
+  height: 300rpx;
+  border-radius: 10rpx;
+  background-color: white;
+  margin-bottom: 30rpx;
+}
+.wx-item .wx-list .wx-title{
+  width: 220rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-bottom: 2rpx solid #7f7f7f;
+  text-align: center;
+  margin: 0 auto;
+}
+.wx-item .wx-list .wx-content{
+  text-align: center;
+  height: 150rpx;
+  line-height: 150rpx;
+}
+.wx-item .wx-list .wx-btn{
+  display: flex;
+  width: 100%;
+  height: 78rpx;
+  line-height: 78rpx;
+}
+.wx-item .wx-list .wx-btn .wx-size{
+  width: 50%;
+  text-align: center;
+  color: white;
+}
+.wx-item .wx-list .wx-btn .wx-red{
+  background-color: #f03129;
+  border-radius: 0 0 0 10rpx;
+}
+.wx-item .wx-list .wx-btn .wx-green{
+  background-color: #24aa47;
+  border-radius: 0 0 10rpx 0;
+}
+
+.wx-fsnth2{
+  color: gray!important;
+}
+
+
+

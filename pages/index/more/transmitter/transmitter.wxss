@@ -1,0 +1,12 @@
+/* pages/index/more/transmitter/transmitter.wxss */
+page{
+  background-color: white;
+}
+
+.page .flex-item {
+  justify-content:space-around;
+}
+
+.page .flex-item text{
+  width: 240rpx;
+}

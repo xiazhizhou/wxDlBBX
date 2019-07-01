@@ -1,0 +1,4 @@
+/* pages/index/more/discharge/advice/advice.wxss */
+page{
+  background-color: white;
+}

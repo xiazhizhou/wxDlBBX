@@ -1,0 +1,16 @@
+<!--pages/profile/collectMy/collectMy.wxml-->
+<view class='wx-ctj'>
+  <view class="wx-item" wx:for="{{list}}">
+    <view class='wx-list' >
+      <view class='wx-title'>{{item.ProfessionType}}</view>
+      <view class='wx-content'>收藏题目总数：{{item.ExamQuestions.length}}题</view>
+      <view class='wx-btn'>
+        <view class='wx-size wx-red' data-viewpoint="{{item.ExamQuestions}}" catchtap='delete'>删除</view>
+        <view class='wx-size wx-green' data-viewpoint="{{item.ProfessionType}}" catchtap='practice'>练习</view>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{list.length == 0}}" style='text-align:center;'>暂无数据</view>
+</view>
+
+

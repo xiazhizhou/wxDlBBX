@@ -1,0 +1,31 @@
+<view class='question'>
+  <view class='question_mc'>
+    <!-- <view>
+      <text class='BDTfont tongz'></text>
+    </view>
+    <view class='question_text'>
+      |祝贺张一山同志获得第一届j精英杯竞赛第一名。
+    </view> -->
+  </view>
+  <view class='question_tk'>
+    <view class='question_top'>
+      <view>
+        <view class='tytk' id='ty' catchtap='togo'>通用题库</view>
+      </view>
+      <view>
+        由开发商提供的通用题库 
+      </view>
+    </view>
+    <view class='question_bottom'>
+      <view>
+        <view class='tytk' id='zy' catchtap='togo'>专用题库</view>   
+      </view>
+      <view>
+        电厂合作提供的专用题库， 
+      </view>
+      <view>
+        供对应的电厂人员操作练习
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "竞赛模式",
+  "usingComponents": {
+    "dialog": "/components/dialog/dialog"
+  }
+}

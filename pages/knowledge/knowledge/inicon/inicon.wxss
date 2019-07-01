@@ -1,0 +1,68 @@
+/* pages/knowledge/knowledge/inicon/inicon.wxss */
+page{
+  background-color:white!important; 
+}
+.pages{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 90rpx;
+  line-height: 90rpx;
+  background: #ffffff;
+  border-bottom: 2rpx solid #dedede;
+}
+.pages .page__bd{
+  position: relative;
+  width: 33.3333333%;
+  text-align: center;
+}
+.pages .name{
+  color: #29a8fd;
+}
+.pages .name:before{
+  content: "";
+  border-width: 16rpx;
+  border-style: solid;
+  border-color: transparent transparent #0099ff transparent;
+  position:absolute;
+  bottom: 0;
+  left:106rpx;
+}
+
+/* 菜单样式 */
+.section{
+  background: white;
+  margin-bottom: 20rpx; 
+}
+
+.grids {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;  
+  background-color: #fff; 
+}
+
+.grids .item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33.33333%;
+  padding: 30rpx 0px;
+  box-sizing: border-box;
+}
+
+.grids .item text:nth-child(2){
+  width: 180rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 26rpx;
+} 
+.grids .item image{
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 20rpx;
+}

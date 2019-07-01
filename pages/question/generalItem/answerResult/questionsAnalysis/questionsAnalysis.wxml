@@ -1,0 +1,57 @@
+<!--pages/question/generalItem/answerResult/questionsAnalysis/questionsAnalysis.wxml-->
+<view class='authoritys'>
+  <view class='decide-header'>
+    <view class='decide-header-left'>
+      <view class='decide-header-total'>
+         {{item.length}}题
+      </view>
+    </view>
+    <view class='decide-header-center'>
+      <view class='decide-header-cgs'>
+        <view catchtap='saveTraingExam'>
+          <text>答案：</text>
+          <text>{{allRadio[(item[index].ShowRightAnswer[0]-1)]}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='decide-header-right'>
+      <view class='decide-header-totaljs'>
+        {{index+1}}/{{item.length}}
+      </view>
+    </view>
+  </view>
+  <view class='decide-dati'>
+    <view>
+      {{index+1}}、{{item[index].QuestionName}}
+    </view>
+    <view class='decide-datiauto'>
+      <view wx:for="{{item[index].ShowAllAnswers}}" wx:key="item" wx:for-index="bindex" data-id="{{bindex}}" data-viewpoint='{{item}}'>
+        <button class="weui-btn mini-btn btnSize btncolop {{bindex==id?showRightAnswer==items?'green':'red':'blue'}}" type="warn" size="mini">
+          <view>{{allRadio[bindex]}}.{{item}}</view>
+          <view></view>
+        </button>
+      </view>
+    </view>
+  </view>
+  <view class='decide-footer'>
+    <view class='decide-footerauto'>
+      <view catchtap='previous'>
+        上一题
+      </view>
+      <view style='background-color:white;'>
+        
+      </view>
+      <view class='collectionfont'>
+        <!-- <text class='BDTfont collection'></text> -->
+      </view>
+      <view catchtap='isHand' style='background-color:white;'>
+        
+      </view>
+      <view catchtap='next'>
+        下一题
+      </view>
+    </view>
+  </view>
+</view>
+
+

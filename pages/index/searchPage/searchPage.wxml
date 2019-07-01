@@ -1,0 +1,50 @@
+<!--pages/index/searchPage/searchPage.wxml-->
+<view class='wx-specialty'>
+  <view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+      <view class="weui-search-bar__box">
+        <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+        <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" bindconfirm="inputSearch" />
+        <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+          <icon type="clear" size="14"></icon>
+        </view>
+      </view>
+      <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+        <icon class="weui-icon-search" type="search" size="14"></icon>
+        <view class="weui-search-bar__text">搜索</view>
+      </label>
+    </view>
+    <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+  </view>
+  <!-- <view class='weui-bg'>
+    <view class="weui-cells__title2">
+      <view>搜索历史</view>
+      <view catchtap='delet'>
+        <text class='BDTfont sca'></text>
+      </view>
+    </view>
+    <view class='weui-btn'>
+      <view class='weui-ben-item' wx:for="{{arrList}}" wx:key="{{item}}">{{item}}</view>
+      <view wx:if="{{arrList.length==0}}" style='text-align:center;'>暂无记录</view>
+    </view>
+  </view> -->
+  <view class='wx-views' wx:if="{{inputVal.length > 0}}">
+    <view class='wx-boxs'>
+      <view class="weui-cells__title">相关搜索</view>
+      <navigator open-type="navigateTo" hover-class="none" class='wx-list' wx:for="{{list}}" url="{{item.Urls}}">
+        <view class='wx-img'>
+          <text class="{{item.Icon}} fontsize"  style='color:{{item.Color}}'></text>
+        </view>
+        <view>
+          <text>{{item.Name}}</text>
+        </view>
+      </navigator>
+    </view>
+    <!-- <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd" wx:for="{{list}}">{{item.Name}}</view>
+      </view>
+    </view> -->
+  </view>
+  <view wx:if="{{list.length == 0}}" style='text-align:center;'>暂无数据</view>
+</view>

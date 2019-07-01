@@ -1,0 +1,4 @@
+/* pages/index/more/steammeter/dimensionHz/dimensionjz.wxss */
+page{
+  background-color: white;
+}

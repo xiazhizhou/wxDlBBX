@@ -1,0 +1,10 @@
+<!--pages/index/newsItem/newsItem.wxml-->
+<view class='news-box'>
+  <view class='news-boxauto'>
+    <view class='news-title'>{{item.Title}}</view>
+    <view class='news-time'></view>
+    <view class='news-img'><image src='{{item.imgUrl}}'></image></view>
+    <view class='news-content'><text decode="true">{{item.Content}}</text></view>
+    <view class='news-abstract'>{{item.Abstract}}</view>
+  </view>
+</view>

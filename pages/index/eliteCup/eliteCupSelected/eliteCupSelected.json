@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "精英杯比赛答题",
+  "usingComponents": {
+    "dialog": "/components/dialog/dialog"
+  } 
+}

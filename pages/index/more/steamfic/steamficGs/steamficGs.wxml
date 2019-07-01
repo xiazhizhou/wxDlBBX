@@ -1,0 +1,29 @@
+<!--pages/index/more/steamfic/steamficGs/steamficGs.wxml-->
+<view class='pages'>
+  <view class='page-boxs'>
+    <image src='../../../../../assets/images/9.qjzxl.png'></image>
+  </view>
+  <view class='adviceTxt adviceTxts'>
+    <view class='adviceauto'>
+      <view>
+        已知汽缸进口蒸汽温度T1，压力P1；汽缸出口排汽温度T2，压力P2。
+      </view>
+      <view>
+        根据汽缸进口蒸汽温度T1，压力P1可以计算出汽缸进口蒸汽焓H1，熵S1。
+      </view>
+      <view>
+        根据汽缸出口排汽温度T2，压力P2可以计算汽缸出口排汽焓H2。
+      </view>
+      <view>
+        根据汽缸进口蒸汽熵S1,出口压力P2可以计算出汽缸出口蒸汽等熵焓HT。
+      </view>
+      <view>
+        然后根据汽级组效率计算公式得出汽缸效率。
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+

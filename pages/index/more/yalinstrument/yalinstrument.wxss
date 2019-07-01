@@ -1,0 +1,7 @@
+/* pages/index/more/yalinstrument/yalinstrument.wxss */
+page{
+  background-color: white;
+}
+.page .flex-item text {
+  width:324rpx;
+}

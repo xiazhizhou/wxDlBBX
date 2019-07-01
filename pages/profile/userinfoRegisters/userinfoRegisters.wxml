@@ -1,0 +1,34 @@
+<!--pages/profile/userinfoRegisters/userinfoRegisters.wxml-->
+<view class='wx-header'>
+  <view class='wx-header-auto'>
+    <view class='wx-header-left'>
+      <view class='wx-header-image'>
+        <image src='{{item.ImageUrl}}' mode="scaleToFill"></image>
+      </view>
+      <view class='wx-text'>{{item.Name}}</view>
+    </view>
+    <view class='wx-header-right' catchtap='setting'>
+      <view>
+        <text style='font-size: 46rpx;color:#1AC165;' class='BDTfont shezhi'></text>
+      </view>
+      <view>
+        设置
+      </view>
+    </view>
+  </view>
+</view>
+<view class='wx-hr'></view>
+<view class='wx-content'>
+  <view class='wx-content-top'>
+    我的单位：{{item.Organization}}
+  </view>
+  <view wx:if="{{list.length==0}}" style='text-align:center;margin-top:10rpx;'>暂无数据</view>
+  <view class='wx-content-bottom' wx:for="{{list}}">
+    <view class='wx-content-bottomleft'>
+      <image src='{{item.ImageUrl}}' mode="scaleToFill"></image>
+    </view>
+    <view class='wx-content-bottomright'>
+      {{item.Organization}}
+    </view>
+  </view>
+</view>

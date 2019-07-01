@@ -1,0 +1,21 @@
+<view class='tui-city-box' wx:if="{{list.length > 5}}">
+  <scroll-view class="tui-city-scroll" scroll-x="true" scroll-into-view="NAV{{toView}}" scroll-with-animation="true">
+    <text bindtap="tap" id="NAV{{index}}" class="tui-nav-li {{index === navActive ? 'tui-navactive' : ''}}" data-index="{{index}}" wx:for="{{list}}" wx:key="">{{item.Name}}</text>
+  </scroll-view>
+</view>
+<scroll-view class="nav_right" scroll-x="true" scroll-y="true" scroll-into-view="NAV{{toView}}" bindscroll="scroll" scroll-with-animation="true">
+  <view class="section" wx:for="{{list}}">
+  <!-- <view class="section" wx:for="{{list}}" wx:key="item"> -->
+    <view class="section__title" id="NAV{{index}}">
+      <text>{{item.Name}}</text>
+    </view>
+    <view class="grids">
+      <navigator open-type="navigateTo" hover-class="none" class="item" url="{{item.Urls}}" wx:for="{{item.ChildName}}" bindtap='navtor' wx:key="item">
+        <text class='{{item.Icon}}' style='color:{{item.Color}}'></text>
+        <text>{{item.Name}}</text>
+      </navigator>
+    </view>
+  </view>
+</scroll-view>
+
+

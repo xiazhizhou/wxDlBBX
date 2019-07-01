@@ -1,0 +1,73 @@
+.loginBox{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.loginBox .img{
+  width: 100%;
+  position: absolute;
+  top:0;
+}
+.loginBox .header{
+  width: 100%;
+  position: absolute;
+  top:100rpx;
+}
+.loginBox .header .headerflex{
+  display:flex;                    
+  justify-content: center;
+}
+.loginBox .header .headerbb{
+  margin-top: 30rpx;
+  display:flex;                    
+  justify-content: center;
+}
+.loginBox .header .headerbb text{
+  font-size: 48rpx;
+}
+.loginBox .header .icon{
+  width: 250rpx;
+}
+.loginBox .header text{
+  color: white;
+}
+.loginBox .header .content{
+  margin-top:200rpx;
+}
+.loginBox .header .contentbtn{
+  display:flex;                    
+  justify-content: center;
+  margin-top: 80rpx;
+}
+.loginBox .header .contentbtn .bottomjl{
+  background-color: #efad63;
+  color: white;
+  width: 300rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-radius: 60rpx; 
+  font-size: 32rpx;
+}
+.loginBox .header .contenttxt{
+  display:flex;                    
+  justify-content: center;
+}
+.loginBox .header .contenttxt .cx,.loginBox .header .contenttxt2 .cx{
+  margin-left: 26rpx;
+}
+.loginBox .header .contenttxt2{
+  display:flex;                    
+  justify-content: center;
+}
+.loginBox .header .contenttxt text,.loginBox .header .contenttxt2 text{
+  font-size: 38rpx;
+  margin-right: 30rpx;
+}
+.footer-bq{
+  margin-top: 100rpx;
+}
+.footer-bq view{
+  color: white;
+  text-align: center;
+}
+

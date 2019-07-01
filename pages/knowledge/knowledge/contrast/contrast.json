@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "SAMA图符对照表",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "reload": "/components/reload/reload"
+  }
+}

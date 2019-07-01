@@ -1,0 +1,22 @@
+<!--pages/index/more/couple/couple.wxml-->
+<view class="page__bd">
+  <view class="weui-cells__title">电偶</view>
+  <view class="weui-cells weui-cells_after-title">
+    <navigator url="/pages/index/more/tabsearch/couple/couple?name=K型热电偶已知电压" class="weui-cell weui-cell_access" hover-class="none">
+      <view class="weui-cell__bd">K型热电偶已知电压</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+    <navigator url="/pages/index/more/tabsearch/couple2/couple2?name=E型热电偶已知电压" class="weui-cell weui-cell_access" hover-class="none">
+      <view class="weui-cell__bd">E型热电偶已知电压</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+    <navigator url="/pages/index/more/tabsearch/couple3/couple3?name=K型热电偶已知物温度" class="weui-cell weui-cell_access" hover-class="none">
+      <view class="weui-cell__bd">K型热电偶已知物温度</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+    <navigator url="/pages/index/more/tabsearch/couple4/couple4?name=E型热电偶已知物温度" class="weui-cell weui-cell_access" hover-class="none">
+      <view class="weui-cell__bd">E型热电偶已知物温度</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+  </view>
+</view>

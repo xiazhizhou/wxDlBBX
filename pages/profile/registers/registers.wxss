@@ -1,0 +1,64 @@
+/* pages/profile/registers/registers.wxss */
+.wx-registers{
+  width: 100%;
+}
+.wx-registers .wx-registers-auto{
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 40rpx;
+}
+.wx-registers-title{
+  margin-bottom: 30rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.wx-input{
+  border: 2rpx solid gainsboro;
+  background-color: white;
+  height: 60rpx;
+  line-height: 60rpx;
+  display:flex;
+  align-items: center;
+}
+.wx-input input{
+  width: 100%;
+  margin-left: 10rpx;
+}
+.wx-registers-center{
+  display: flex;
+  justify-content: center;
+  height: 250rpx;
+  align-items: center;
+}
+.wx-registers-fh{
+  margin-bottom: 100rpx;
+}
+.wx-registers-btnn{
+  display: flex;
+  justify-content: center;
+}
+.wx-registers-btnn button{
+  width: 50%;
+}
+.wx-registers-bottom .wx-registers-tx{
+  margin-top: 100rpx;
+}
+.wx-registers-goback{
+  display: flex;
+  justify-content: center;
+}
+.wx-registers-go{
+  margin-top: 100rpx;
+}
+.wx-registers-center view,.wx-registers-go{
+  width: 50%;
+}
+.btnbule{
+  background-color: #0099ff!important;
+}
+.btngreen{
+  background-color: #3ab54a!important;
+}
+.btnSize{
+  width: 100%;
+}

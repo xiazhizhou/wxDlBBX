@@ -1,0 +1,76 @@
+<!--pages/index/more/smokedust/smokedustGs/smokedustGs.wxml-->
+<view class='pages'>
+  <view class='page-boxs'>
+    <image src='../../../../../assets/images/23.yc.png'></image>
+  </view>
+  <view class='adviceTxt'>
+    <view class='adviceauto'>
+      <view class='page_title'>
+        <text>烟气中烟灰占灰分量的百分数dfh参考值</text>
+      </view>
+      <view class="table">
+        <view class="tr">
+          <view class="th ths2">锅炉类型</view>
+          <view class="th ths2">烟灰占灰分量dfh/%</view>
+          <view class="th ths2">锅炉类型</view>
+          <view class="th ths2">烟灰占灰分量dfh</view>
+        </view>
+        <block>
+          <view class="trs">
+            <view class="td tds2">手烧炉</view>
+            <view class="td tds2">15-25</view>
+            <view class="td tds2">往复炉</view>
+            <view class="td tds2">15-20</view>
+          </view>
+          <view class="trs">
+            <view class="td tds2">链条炉</view>
+            <view class="td tds2">15-25</view>
+            <view class="td tds2">化铁炉</view>
+            <view class="td tds2">25-35</view>
+          </view>
+          <view class="trs">
+            <view class="td tds2">抛煤机炉</view>
+            <view class="td tds2">25-40</view>
+            <view class="td tds2">振动炉</view>
+            <view class="td tds2">20-40</view>
+          </view>
+          <view class="trs">
+            <view class="td tds2">沸腾炉</view>
+            <view class="td tds2">40-60</view>
+            <view class="td tds2">油炉</view>
+            <view class="td tds2">0</view>
+          </view>
+          <view class="trs">
+            <view class="td tds2">煤粉炉</view>
+            <view class="td tds2">70-80</view>
+            <view class="td tds2">天然气炉</view>
+            <view class="td tds2">0</view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class='adviceauto'>
+      <view class='page_title'>
+        <text>烟尘中可燃物的百分含量Cfh参考值</text>
+      </view>
+      <view class="table">
+        <view class="tr">
+          <view class="th">锅炉类型</view>
+          <view class="th">烟尘中可燃物的含量Cfh/%</view>
+        </view>
+        <block>
+          <view class="trs">
+            <view class="td">煤粉炉</view>
+            <view class="td">4-8</view>
+          </view>
+          <view class="trs">
+            <view class="td">沸腾炉</view>
+            <view class="td">15-26</view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
+
+

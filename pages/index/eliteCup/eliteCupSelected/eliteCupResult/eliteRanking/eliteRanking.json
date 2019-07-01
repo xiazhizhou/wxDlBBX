@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "精英杯排行榜",
+  "usingComponents": {
+    "dialog": "/components/dialog/dialog"
+  }
+}

@@ -1,0 +1,45 @@
+<!--pages/knowledge/knowledge/safety/safety.wxml-->
+<view class='pagebox'>
+  <view class="section">
+    <view class='page_table'>
+      <view class='page_title'>
+        <text>电压等级母线颜色</text>
+      </view>
+      <view class="table">
+        <view class="tr">
+          <view class="th">类型</view>
+          <view class="th">电压(KV)</view>
+          <view class="th">颜色名称</view>
+          <view class="th">颜色编号</view>
+        </view>
+        <block wx:for="{{list}}" wx:key="item">
+          <view class="tr">
+            <view class="td">{{item.Type}}</view>
+            <view class="td">{{item.code}}</view>
+            <view class="td">{{item.value}}</view>
+            <view class="td" style='background-color:{{item.color}};color:white;'>{{item.colorId}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class='page_bz'>
+      <view class='page_auto'>
+        <view>
+          注1: 模拟母线宽带应为6mm-12mm;
+        </view>
+        <view>
+          注2: 设备模拟的涂色应与相同电压等级的母线颜色一致;
+        </view>
+        <view>
+          注3: 颜色实例参考GSB_G51001-94漆膜颜色标准样卡pdf;
+        </view>
+      </view>
+    </view>
+    <view class='page_gb'>
+      <view style='width:100%;text-align:center;'>
+        <text>国标:</text> GB 50171-2012 <text>电气装置安装工程</text> 
+        <text>盘、柜及二次回路</text>
+      </view>
+    </view>
+  </view>
+</view>

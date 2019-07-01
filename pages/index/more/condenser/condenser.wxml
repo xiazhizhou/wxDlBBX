@@ -1,0 +1,57 @@
+<!--pages/index/more/condenser/condenser.wxml-->
+<view class='page'>
+  <view class="section">
+    <view class="section__title">输入：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <text>汽轮机背压P1：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='qjValue' value='{{qjValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>kPa</view>
+        </view>
+      </view>
+      <view class="flex-item bc_green">
+        <text>当地大气压P2：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='dqValue' value='{{dqValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>kPa</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section__title">输出：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <text>真空度nzk：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' value='{{list[0]}}' type='digit' disabled='disabled' />
+          <view class='text'>%</view>
+        </view> 
+      </view>
+    </view>
+  </view>
+  <view class="section section-mt">
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <button class='flex-btn' catchtap='compute'>
+          一键计算
+        </button>
+      </view>
+      <view class="flex-item bc_green">
+        <button class='flex-btn' catchtap='clear'>
+          一键清除
+        </button>
+      </view>
+    </view>
+  </view>
+  <view class='img'>
+    <view class="section__title">计算公式：</view>
+    <view class='img-box'>
+      <image src='../../../../assets/images/13.lqqzk.png'></image>
+    </view>
+    <view class="section__title">
+      <text>汽轮机背压Ｐ1：汽轮机排汽的绝对压力</text>
+    </view>
+  </view>
+</view>

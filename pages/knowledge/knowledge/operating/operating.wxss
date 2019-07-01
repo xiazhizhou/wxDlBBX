@@ -1,0 +1,15 @@
+/* pages/knowledge/knowledge/operating/operating.wxss */
+page{
+  background-color: white;
+}
+.pagebox{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.page{
+  width: 100%;
+}
+.page image{
+  width: 100%;
+}

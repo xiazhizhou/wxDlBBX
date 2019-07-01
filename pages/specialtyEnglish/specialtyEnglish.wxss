@@ -1,0 +1,58 @@
+/* pages/specialtyEnglish/specialtyEnglish.wxss */
+page{
+  background-color: white;
+}
+.wx-specialty{
+  width: 100%;
+}
+.wx-content{
+  width: 90%;
+  margin: 0 auto;
+}
+.wx-content .wx-table{
+  width: 96%;
+  margin: 40rpx auto;
+  height: 150rpx;
+}
+.wx-content .wx-table .wx-table-zy{
+  display: flex;
+  width: 100%;
+  height: 55rpx;
+  line-height: 55rpx;
+  border: 1px solid #0099ff;
+  align-items: center;
+  border-radius: 40rpx;
+  color: #0099ff;
+  font-size: 28rpx;
+}
+.wx-content .wx-table .wx-table-zy .wx-table-zy-item{
+  width: 33.3333333%;
+  height: 100%;
+  text-align: center;
+}
+.wx-content .wx-table .wx-table-zy:nth-child(1){
+  margin-bottom: 20rpx;
+}
+.wx-content .wx-table .wx-table-zy .wx-table-zy-item:nth-child(1){
+  border-radius: 20rpx 0 0 20rpx;
+}
+.wx-content .wx-table .wx-table-zy .wx-table-zy-item:nth-child(3){
+  width: 212rpx;
+  border-radius: 0 20rpx 20rpx 0;
+}
+.wx-content .wx-table .wx-table-zy .wx-table-zy-item:nth-child(1),.wx-content .wx-table .wx-table-zy .wx-table-zy-item:nth-child(2){
+  border-right: 1px solid #0099ff;
+}
+.wx-active{
+  background-color: #0099ff;
+  color: white;
+}
+.wx-list{
+  width: 100%;
+}
+.wx-list-item{
+  margin: 10rpx 0;
+}
+.wx-list-textbox{
+  word-break:break-all;
+}

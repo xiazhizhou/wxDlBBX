@@ -1,0 +1,167 @@
+<!--pages/knowledge/knowledge/stype/stype.wxml-->
+<view class="pages">
+  <view class="page__bd {{powerStatus?'name':''}}" id='power' catchtap='switchTab'>
+    <text>安全组织措施</text>
+  </view>
+  <view class="page__bd {{elecStatus?'name':''}}" id='electricity' catchtap='switchTab'>
+    <text>安全技术措施</text>
+  </view>
+  <view class="page__bd {{pressureStatus?'name':''}}" id='pressure' catchtap='switchTab'>
+    <text>电气设备运行</text>
+  </view>
+</view>
+<view class='pagebox' wx:if="{{powerStatus}}">
+  <view class="section">
+    <view class='page_text'>
+      <view>
+        带电作业或与带电设备距离小于表1规定的安全距离但按带电作业方式开展的不停电工作，填用电气带电作业工作票。
+      </view>
+      <view>
+        事故紧急抢修工作使用紧急抢修单或工作票，非连续进行的事故修复工作使用工作票。
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class='page_table'>
+      <view class='page_title'>
+        <text>表1 设备不停电式安全距离</text>
+      </view>
+      <view class="table">
+        <view class="tr">
+          <view class="th">电压等级</view>
+          <view class="th">安全距离(m)</view>
+        </view>
+        <block wx:for="{{list}}" wx:key="item">
+          <view class="tr">
+            <view class="td">{{item.code}}</view>
+            <view class="td">{{item.value}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class='page_bz'>
+      <view class='page_auto'>
+        <view>
+          注1: 表中未列电压等级按高一档电压等级安全距离;
+        </view>
+        <view>
+          注2: 13.8KV执行10KV的距离;
+        </view>
+        <view>
+          注3: 750KV数据按海拔2000M校正,其他等级数据按海拔1000M校正;
+        </view>
+      </view>
+    </view>
+    <view class='page_gb'>
+      <view>
+        <text>国标:</text> GB 26860-2011 <text>电力安全工作规程</text> 
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='pagebox' wx:if="{{elecStatus}}">
+  <view class="section">
+    <view class='page_text'>
+      <view>
+        6.2 停电
+      </view>
+      <view>
+        6.2.1 符合下列情况之一的设备应停电：
+      </view>
+      <view>
+        a）检修设备；
+      </view>
+      <view>
+        b）与工作人员在工作中的距离小于表2规定的设备；
+      </view>
+      <view>
+        c）工作人员与35KV及一下设备的距离大于表2规定的安全距离，但小于表1规定的安全距离，同时又无绝缘隔板、安全遮拦等措施的设备；
+      </view>
+      <view>
+        d）带电部分邻近工作人员，且无可靠安全措施的设备；
+      </view>
+      <view>
+        e）其他需要停电的设备。
+      </view>
+      <view>
+        6.2.2 停电设备的各端应有明显的断开点，或应有能反映设备运行状态的电气和机械等指示，不应在只经断路器断开电源的设备上工作。
+      </view>
+      <view>
+        6.2.3 应断开停电设备各侧断路器、隔离开关的控制电源和合闸能源，闭锁隔离开关的操作机构。
+      </view>
+      <view>
+        6.2.4 高压开关柜的手车开关应拉至“实验”或“检修”位置。
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class='page_table'>
+      <view class='page_title'>
+        <text>表2 人员工作中与设备带电部分的安全距离</text>
+      </view>
+      <view class="table">
+        <view class="tr">
+          <view class="th">电压等级</view>
+          <view class="th">安全距离(m)</view>
+        </view>
+        <block wx:for="{{list2}}" wx:key="item">
+          <view class="tr">
+            <view class="td">{{item.code}}</view>
+            <view class="td">{{item.value}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class='page_bz'>
+      <view class='page_auto'>
+        <view>
+          注1: 表中未列电压等级按高一档电压等级安全距离;
+        </view>
+        <view>
+          注2: 13.8KV执行10KV的距离;
+        </view>
+        <view>
+          注3: 750KV数据按海拔2000M校正,其他等级数据按海拔1000M校正;
+        </view>
+      </view>
+    </view>
+    <view class='page_gb'>
+      <view>
+        <text>国标:</text> GB 26860-2011 <text>电力安全工作规程</text> 
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='pagebox' wx:if="{{pressureStatus}}">
+  <view class="section">
+    <view class='page_text'>
+      <view>
+        7.1 一般要求
+      </view>
+      <view>
+        7.1.1 设备不停电时,人员在现场应符合表1的安全距离要求。
+      </view>
+      <view>
+        7.1.2 高压设备符合下列条件时,可实行单人值班或操作。
+      </view>
+      <view>
+        a) 室内高压设备的隔离室设有安装牢固、高度大于1.7m的遮拦，遮拦通道门加锁;
+      </view>
+      <view>
+        b) 室内高压断路器的操作机构用墙或金属板与该断路器隔离或装有远方操作机构。
+      </view>
+      <view>
+        7.1.3 高压设备发生接地故障时,室内人员进入接地点4m以内,室外人员进入接地点8m以内,均应穿绝缘靴,接触设备的外壳和构架时,还应戴绝缘手套。
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class='page_gb'>
+      <view>
+        <text>国标:</text> GB 26860-2011 <text>电力安全工作规程</text> 
+      </view>
+    </view>
+  </view>
+</view>

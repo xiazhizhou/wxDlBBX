@@ -1,0 +1,62 @@
+<!--pages/question/generalItem/randomSign/randomSign.wxml-->
+<view class='authoritys'>
+  <view class='decide-header'>
+    <view class='decide-header-left'>
+      <view class='decide-header-total'>
+        {{item.length}}题
+      </view>
+    </view>
+    <view class='decide-header-center'>
+      <!-- <view class='decide-header-cgs'>
+        <view>
+          <text>正确：</text>
+          <text>{{correct}}题</text>
+        </view>
+        <view>
+          <text>错误：</text>
+          <text>{{error}}题</text>
+        </view>
+      </view> -->
+    </view>
+    <view class='decide-header-right'>
+      <view class='decide-header-totaljs'>
+        {{index+1}}/{{item.length}}
+      </view>
+    </view>
+  </view>
+  <view class='decide-dati'>
+    <view>
+      {{index+1}}、{{item[index].QuestionName}}
+    </view>
+    <view class='decide-datiauto'>
+      <view wx:for="{{item[index].ShowAllAnswers}}" wx:key="item" wx:for-index="bindex" data-id="{{bindex}}" data-viewpoint='{{bindex}}' catchtap='saveTraingExam'>
+        <button class="weui-btn mini-btn btnSize btncolop {{bindex==id?showRightAnswer==items?'green':'red':'blue'}}" type="warn" size="mini">
+          <view>{{allRadio[bindex]}}.{{item}}</view>
+          <view></view>
+        </button>
+      </view>
+    </view>
+  </view>
+  <view class='decide-footer'>
+    <view class='decide-footerauto'>
+      <view catchtap='previous'>
+        
+      </view>
+      <button class='getShareInfo' open-type="share">
+        求助
+      </button>
+      <view class='collectionfont' catchtap='searchC'>
+      </view>
+      <view catchtap='getExam'>
+        开始答题
+      </view>
+      <view>
+        
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+

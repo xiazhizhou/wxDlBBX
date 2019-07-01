@@ -1,0 +1,74 @@
+<!--pages/index/more/consump/consump.wxml-->
+<view class='page'>
+  <view class="section">
+    <view class="section__title">输入：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <text>纯酸量G：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='cslValue' value='{{cslValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>g</view>
+        </view>
+      </view>
+      <view class="flex-item bc_green">
+        <text>进水平均碱度B：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='jsValue' value='{{jsValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>mmol/L</view>
+        </view>
+      </view>
+      <view class="flex-item bc_green">
+        <text>进水平均酸度A：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='sdValue' value='{{sdValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>mmol/L</view>
+        </view>
+      </view>
+      <view class="flex-item bc_green">
+        <text>周期制水量W：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' id='zqValue' value='{{zqValue}}' type="digit" placeholder-style="color:#c4c5c7" bindinput="bindKeyInput" placeholder="输入数值" />
+          <view class='text'>t</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section__title">输出：</view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <text>酸耗S：</text>
+        <view class='flexInputbox'>  
+          <input class='flex-input' value='{{list[0]}}' type='digit' disabled='disabled' />
+          <view class='text'>g/mol</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section section-mt">
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">
+        <button class='flex-btn' catchtap='compute'>
+          一键计算
+        </button>
+      </view>
+      <view class="flex-item bc_green">
+        <button class='flex-btn' catchtap='clear'>
+          一键清除
+        </button>
+      </view>
+    </view>
+  </view>
+  <view class='img'>
+    <view class="section__title">计算公式：</view>
+    <view class='img-box'>
+      <image src='../../../../assets/images/43.sh.png'></image>
+    </view>
+  </view>
+</view>
+
+
+
+
+
+

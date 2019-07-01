@@ -1,0 +1,20 @@
+<!--components/alert/alert.wxml-->
+<view class='wx_dialog_container' hidden="{{!isShow}}">
+  <view class='wx-mask'></view>
+  <view class='wx-dialog'>
+    <view class='wx-dialog-title'>{{ title }}</view>
+    <view class='wx-dialogbor'></view>
+    <view class='wx-dialog-content' wx:if="{{isArr}}">
+      <text wx:for="{{content}}" wx:key="item" class='wx-dialog-text'>{{item.content}}</text>
+    </view>
+    <view class='wx-dialog-content' wx:if="{{!isArr}}">
+      <text class='wx-dialog-text'>{{contentStr}}</text>
+    </view>
+    <view class='wx-x' catchtap='_cancelEvent'>
+      <text class='BDTfont cuwu'></text>
+    </view>
+    <view wx:if="{{hidden}}" class='wx-box'>
+      <button class='wx-setting' catchtap='goTo'>高级选项设置</button>
+    </view>
+  </view>
+</view>

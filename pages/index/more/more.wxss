@@ -1,0 +1,73 @@
+/* pages/specialty/specialty.wxss */
+/* 菜单样式 */
+.tui-city-box{
+  width: 100%;
+  overflow-x: scroll;
+}
+.tui-city-scroll{
+  /* width: 200%; */
+  height: 70rpx;
+  line-height: 70rpx;
+  background-color:white;
+} 
+.tui-city-scroll .tui-navactive{
+  color: #009AFE;
+  border-bottom: 2rpx solid #009AFE;
+}
+.tui-city-scroll .tui-nav-li{
+  width: 16.666667%;
+  margin: 0 20rpx;
+  padding-bottom: 10rpx;
+}
+
+.section{
+  background: white;
+  margin-bottom: 20rpx; 
+}
+
+.section__title{
+  font-size: 28rpx;
+  padding: 20rpx 0 10rpx 0;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  border-bottom: 2rpx solid #dedede;
+}
+
+.section__title text:nth-child(1){
+  font-weight: bold;
+}
+
+.grids {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;  
+  background-color: #fff; 
+}
+
+.grids .item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  padding: 20rpx 0 20rpx 0;
+  box-sizing: border-box;
+}
+.grids .item text{ 
+  display: block;
+}
+.grids .item text:nth-child(1){
+  height: 80rpx;
+  font-size: 60rpx;
+  transform: scale(1);
+}
+.grids .item text:nth-child(2){
+  width: 180rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 26rpx;
+} 

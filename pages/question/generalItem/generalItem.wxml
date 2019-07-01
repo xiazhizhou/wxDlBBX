@@ -1,0 +1,128 @@
+<!--pages/question/generalItem/generalItem.wxml-->
+<view class='authority'>
+  <view class='authority_header'>
+    <view class='authority_hleft'>
+      <view class='authority_box'>
+        <view class='authority_tx'>
+          <image src="{{item.ImageUrl}}" mode="scaleToFill"></image>
+        </view>
+        <view class='authority_name'>
+          {{item.Name}}
+        </view>
+      </view>
+      <view class='authority_jf'>
+        <text>当前积分：</text>
+        <text>{{item.Score}}</text>
+      </view>
+    </view>
+    <view class='authority_center'>
+      <view class='authority_centerAuto'>
+        <view class='authority_centerCor' bindtap="getExam">规则说明</view>
+      </view>
+    </view>
+    <view class='authority_hright'>
+      <view class='authority_fhk'>
+        <text>剩余复活卡：</text>
+        <text>{{item.ReviveCard}}</text>
+      </view>
+      <view class='authority_ls'>
+        <text>历史最高分：</text>
+        <text>{{max}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='ranking'>
+    <view>
+      <button id='phburl' catchtap='gotoUrl' class="weui-btn mini-btn btnSize btncolop" type="warn" size="mini">排行榜</button>
+      <button id='ctjurl' catchtap='gotoUrl' class="weui-btn mini-btn btnSize btncoloc" type="warn" size="mini">错题集</button>
+    </view>
+  </view>
+  <view>
+    <view class='xuan'>
+      <text>模式选择</text>
+    </view>
+    <view class='ranking_btn'>
+      <button id='lxms' catchtap='selectedMode' class="weui-btn mini-btn btnSize {{lxmsStatus?'name':''}}" type="warn" size="mini">练习模式</button>
+      <button id='sjms' catchtap='selectedMode' class="weui-btn mini-btn btnSize {{sjmsStatus?'name':''}}" type="warn" size="mini">随机模式</button>
+      <button id='jsms' catchtap='selectedMode' class="weui-btn mini-btn btnSize {{jsmsStatus?'name':''}}" type="warn" size="mini">竞赛模式</button>
+    </view>
+  </view>
+  <view>
+    <view class='xuan'>
+      <text>题型选择</text>
+    </view>
+    <view class='ranking_btn'>
+      <button id='xzt' class="weui-btn mini-btn btnSize {{xztStatus?'name':''}}" catchtap='questionSelect' type="warn" size="mini">选择题</button>
+      <button id='pdt' class="weui-btn mini-btn btnSize {{pdtStatus?'name':''}}" catchtap='questionSelect' type="warn" size="mini">判断题</button>
+      <button id='wdt' class="weui-btn mini-btn btnSize {{wdtStatus?'name':''}}" catchtap='questionSelect' type="warn" size="mini">问答题</button>
+    </view>
+  </view>
+  <view class='ceshi_swiper'>
+    <view class='xuan'>
+      <text>专业类型</text>
+    </view>
+    <swiper class='read_swiper' current="{{current}}">
+      <swiper-item>
+        <view class='ranking_btn'>
+          <button id='glzy' class="weui-btn mini-btn btnSize {{glzyStatus?'name':''}}" catchtap='specialtySelected' type="warn" size="mini">
+            <text class='BDTfont glzya'></text>
+            <view>锅炉专业</view>
+          </button>
+          <button id='qjzy' class="weui-btn mini-btn btnSize {{qjzyStatus?'name':''}}" catchtap='specialtySelected' type="warn" size="mini">
+            <text class='BDTfont qjzya'></text>
+            <view>汽机专业</view>
+          </button>
+          <button id='dqzy' class="weui-btn mini-btn btnSize {{dqzyStatus?'name':''}}" catchtap='specialtySelected' type="warn" size="mini">
+            <text class='BDTfont dqzya'></text>
+            <view>电气专业</view>
+          </button>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class='ranking_btn'>
+          <button id='rkzy' class="weui-btn mini-btn btnSize {{rkzyStatus?'name':''}}" catchtap='specialtySelected' type="warn" size="mini">
+            <text class='BDTfont rkzya'></text>
+            <view>热控专业</view>
+          </button>
+          <button id='hxzy' class="weui-btn mini-btn btnSize {{hxzyStatus?'name':''}}" catchtap='specialtySelected' type="warn" size="mini">
+            <text class='BDTfont hxzya'></text>
+            <view>化学专业</view>
+          </button>
+          <button id='agzs' class="weui-btn mini-btn btnSize {{agzsStatus?'name':''}}" catchtap='specialtySelected' type="warn" size="mini">
+            <view>
+              <text class='BDTfont agzya'></text>
+            </view>
+            <view>安规专业</view>
+          </button>
+        </view>
+      </swiper-item>
+    </swiper>
+    <view class='ceshi_next' bindtap='prevImg'>
+      <text class='BDTfont left'></text>
+    </view>
+    <view class='ceshi_prew' bindtap='nextImg'>
+      <text class='BDTfont right'></text>
+    </view>
+  </view>
+  <view class='zb'>
+    <view class='ranking_btn' catchtap='answerClick'>
+      <button class="weui-btn mini-btn btnSize btnColorz {{answerStatus?'answer':''}}" type="warn" size="mini">{{answer}}</button>
+    </view>
+  </view>
+</view>
+<view class='wx-mask' wx:if="{{hidder}}"></view>
+<view class='wx-tk' wx:if="{{hidder}}">  
+  <view class='wx-dialog'>
+    <view class='wx-dialog-title'>规则说明</view>
+    <view class='wx-dialogbor'></view>
+    <view class='wx-dialog-content' wx:for="{{list}}" wx:key="{{item}}" wx:for-index="bindex">
+      <text class='wx-dialog-text'>{{bindex+1}}、{{item}}</text>
+    </view>
+    <view class='wx-x' catchtap='getExamHidd'>
+      <text class='BDTfont cuwu'></text>
+    </view>
+    <view class='wx-box'>
+      <button class='wx-setting' catchtap='_goTo'>高级功能规则</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+/* pages/index/more/aircoe/aircoe.wxss */
+page{
+  background-color: white;
+}
+.page .flex-item2{
+  display: flex;
+  align-items: center;
+  margin:30rpx 20rpx;
+}
+.page .flex-item2 text{
+  width: 280rpx;
+}
+.page .flex-item2 .flexInputbox2{
+  display: flex;
+  border: 2rpx solid #656565;
+  border-radius: 20rpx;
+  justify-content: space-around;
+  padding: 5rpx 0;
+}
+.page .flex-item2 .flex-input{
+  padding-left: 10rpx;
+}

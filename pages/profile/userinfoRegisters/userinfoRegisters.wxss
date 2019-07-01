@@ -1,0 +1,65 @@
+/* pages/profile/userinfoRegisters/userinfoRegisters.wxss */
+page{
+  background-color:white;
+}
+.wx-header{
+  width: 100%;
+  height: 180rpx;
+}
+.wx-hr{
+  height: 10rpx;
+  background-color: #f0f0f0;
+}
+.wx-header-auto{
+  display: flex;
+  justify-content: space-between;
+  width: 92%;
+  margin: 0 auto;
+}
+.wx-header-left{
+  display: flex;
+  align-items: center;
+}
+.wx-text{
+  font-size: 36rpx;
+}
+.wx-header-image{
+  width: 150rpx;
+  height: 150rpx;
+  margin: 15rpx 0;
+  margin-right: 20rpx;
+}
+.wx-header-image image{
+  width: 100%;
+  height: 100%;
+}
+.wx-header-right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.wx-content-top{
+  text-align: center;
+  padding: 20rpx 0;
+  border-bottom: 2rpx solid #f0f0f0;
+  font-size: 36rpx;
+}
+.wx-content-bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx 0;
+}
+.wx-content-bottomleft{
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 20rpx;
+}
+.wx-content-bottomleft image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+  

@@ -1,0 +1,12 @@
+<!--pages/knowledge/knowledge/tronic/tronic.wxml-->
+<reload id='reload' buttonText='重 试' message='请求失败' isShow="{{is_loadmore}}" bind:reload="_reload">
+</reload>
+<view class="page__bd" wx:if='{{!is_loadmore}}'>
+  <view class="weui-cells weui-cells_after-title">
+    <navigator wx:for="{{list}}" wx:key="item" url="/pages/knowledge/knowledge/tronic/electronTf/electronTf?id={{item.ID}}&name={{item.NAME}}" class="weui-cell weui-cell_access" hover-class="none">
+        <view class="weui-cell__bd">{{item.NAME}}</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+  </view>
+</view>
+

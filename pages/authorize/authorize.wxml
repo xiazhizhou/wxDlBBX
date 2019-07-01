@@ -1,0 +1,40 @@
+<!--pages/authorize/authorize.wxml-->
+<reload id='reload' 
+  buttonText='重 试'
+  message='请求失败'
+  isShow="{{is_loadmore}}"
+  bind:reload="_reload">
+</reload>
+<view class='loginBox' wx:if="{{canIUse}}">
+  <image class='img' src='../../assets/images/login.png' mode='widthFix' style='display:block;'></image>
+  <view class='header'>
+    <view class='headerflex'>
+      <image class='icon' src='../../assets/images/icon.png' mode='widthFix'></image>
+    </view>
+    <view class='headerbb'>
+      <text>电力百宝箱</text>
+    </view>
+    <view class='content'>
+      <view class='contenttxt'>
+        <text class='cx'>创新</text>
+        <text>智能</text>
+        <text>高效</text>
+      </view>
+      <view class='contenttxt2'>
+        <text class='cx'>笃学</text>
+        <text>慎思</text>
+        <text>尚行</text>
+      </view>
+    </view>
+    <view class='contentbtn'>
+      <button class='bottomjl' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+        点击进入
+      </button>
+    </view>
+    <view class='footer-bq'>
+      <view>武汉博晟信息科技有限公司</view>
+    </view>
+  </view>
+</view>
+
+<view wx:else>请升级微信版本</view>
