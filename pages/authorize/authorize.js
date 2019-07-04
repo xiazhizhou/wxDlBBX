@@ -62,7 +62,7 @@ Page({
     app.agriknow.getRequestWXUrl({ requestUrl: code })
       .then(res => {
         if (res.status){
-          let items = JSON.parse(res.result.Data)
+          let items = JSON.parse(res.result.Data);
           if (items.errcode){
             wx.showToast({
               title: "获取登录凭证失败",
